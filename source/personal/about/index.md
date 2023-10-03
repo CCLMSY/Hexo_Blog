@@ -1,0 +1,72 @@
+---
+title: 关于
+date: 2022-08-10 16:05:11
+---
+
+# 1.线路信息🚁
+- 主域名： www.cclmsy.cc | blog.cclmsy.cc
+  均解析至Vercel，Vercel有全球的泛播节点，兼具全球CDN功能，国内访问速度较快 (Ping：70-80ms)
+- 顶级域名： cclmsy.cc
+  目前重定向至主域名 www.cclmsy.cc
+- 初始域名： cclmsy.github.io
+  直链至Github泛播，国内速度较慢 (Ping：80-120ms)
+- **使用VPN访问可能导致网页资源加载出现问题**
+- **主域名暂未取得备案号，目前可能无法通过主域名正常访问**
+
+# 2.技术栈&框架🔧
+- 博客框架：[Hexo 6.3.0](https://github.com/hexojs/hexo)
+- 主题：[Butterfly 4.3.1](https://butterfly.js.org/) 
+- 源码仓库：[Github](https://github.com/)
+- 托管与部署：本网站采部署于：[Vercel](https://vercel.com/) + [Github Pages](https://pages.github.com/)
+- 评论系统： [Twikoo](https://twikoo.js.org/)系统 + [Vercel](https://vercel.com/)部署 + MongoDB提供存储服务
+- 资源库与图床：[Github](https://github.com/)仓库 + [Vercel](https://vercel.com/)部署
+- CDN：[TianliCDN](https://tianli-blog.club/jsd/) + [Staticfile CDN](http://www.staticfile.org/) + [75CDN](https://cdn.baomitu.com/) + [字节跳动静态资源公共库](https://cdn.bytedance.com/) + [elemecdn](https://npm.elemecdn.com/) 等
+- 静态资源压缩: [gulp](https://npm.elemecdn.com/) + [JS & CSS Minifier (Minify)](https://github.com/olback/es6-css-minify/tree/3.0)
+- 音乐平台：[hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer) + [MetingJS](https://github.com/metowolf/MetingJS)
+- 博客统计：[不蒜子](https://aoaoao.info/321.html) + [百度统计](https://tongji.baidu.com/) + baidu-tongji-api爬虫 + [Vercel](https://vercel.com/)部署
+- 异步加载与缓存加速技术：Pjax
+- 弹窗框架支持：Element + Vue
+- 开发语言：HTML5 + CSS3 + JavaScript + Pug + YML等
+- 版权声明：详见CC BY-NC-SA 4.0
+- 维护日志：见旧时光栏目
+
+# 3.关于本人💫
+
+## 深翼/CCLMSY
+## Profile
+- 浙江宁波人
+- 22届 计算机科学与技术专业
+- 目前就读于 浙江省某双非商专
+- 0基础入坑算法竞赛
+- 现役ACM集训队队员
+- 现任校ACM_Club社长
+- CodeForces Rating在1600左右徘徊
+- 云二次元 卡牌游戏爱好者
+
+## Contact With Me
+- QQ/Wechat: 2502408581
+- Email: 2502408581@qq.com
+
+{% note warning modern %}<b>非商免字体、网图</b>等资源未经授权仅限个人使用，不得用于商业用途。本站平时仅用于交流和学习，如涉及侵权请联系站长删除对应资源，谢谢！ —— 致版权方{% endnote %}
+
+
+
+<!-- ## 0.网站自述视频🎬
+
+<div class="about_page">
+  <div align=center class="aspect-ratio">
+      <iframe src="https://player.bilibili.com/player.html?aid=474023258&&page=1&as_wide=1&high_quality=1&danmaku=0" 
+      scrolling="no" 
+      border="0" 
+      frameborder="no" 
+      framespacing="0" 
+      high_quality=1
+      danmaku=1 
+      allowfullscreen="true"> 
+      </iframe>
+  </div>
+</div>
+
+<br> -->
+
+
