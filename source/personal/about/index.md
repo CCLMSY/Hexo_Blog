@@ -23,12 +23,12 @@ date: 2022-08-10 16:05:11
 - CDN：[TianliCDN](https://tianli-blog.club/jsd/) + [Staticfile CDN](http://www.staticfile.org/) + [75CDN](https://cdn.baomitu.com/) + [字节跳动静态资源公共库](https://cdn.bytedance.com/) + [elemecdn](https://npm.elemecdn.com/) 等
 - 静态资源压缩: [gulp](https://npm.elemecdn.com/) + [JS & CSS Minifier (Minify)](https://github.com/olback/es6-css-minify/tree/3.0)
 - 音乐平台：[hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer) + [MetingJS](https://github.com/metowolf/MetingJS)
-- 博客统计：[不蒜子](https://aoaoao.info/321.html) + [百度统计](https://tongji.baidu.com/) + baidu-tongji-api爬虫 + [Vercel](https://vercel.com/)部署
-- 异步加载与缓存加速技术：Pjax
-- 弹窗框架支持：Element + Vue
+- 博客统计：[不蒜子](https://aoaoao.info/321.html) + [百度统计](https://tongji.baidu.com/) + [baidu-tongji-api爬虫](https://github.com/Eurkon/baidu-tongji-api) + [Vercel](https://vercel.com/)部署
+- 异步加载与缓存加速技术：[Pjax](https://github.com/defunkt/jquery-pjax)
+- 弹窗框架支持：[Element](https://github.com/defunkt/jquery-pjax) + [Vue](https://github.com/vuejs/vue)
 - 开发语言：HTML5 + CSS3 + JavaScript + Pug + YML等
-- 版权声明：详见CC BY-NC-SA 4.0
-- 维护日志：见旧时光栏目
+- 版权声明：详见[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+- 维护日志：见[旧时光](/site/time)栏目
 
 # 3.关于本人💫
 
