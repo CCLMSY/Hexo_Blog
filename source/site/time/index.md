@@ -8,7 +8,9 @@ comments: false
 
 <!-- timeline 2023-10-4-->
 
-1. 
+1. 注册域名：cclmsy.top 作为备用域名，供近期访问
+2. 网站备用域名：www.cclmsy.top ，解析至Cloudflare，国内访问速度一般
+3. 由于主域名资源库国内访问被阻断，网站资源暂时移回本地
 
 <!-- endtimeline -->
 
@@ -47,8 +49,8 @@ comments: false
 
 <!-- timeline 2023-9-29-->
 
-1. 注册域名 cclmsy.cc
-3. 网站主域名解析至Vercel，主域名： www.cclmsy.cc | blog.cclmsy.cc ，国内访问友好
+1. 注册域名 cclmsy.cc 
+2. 网站主域名 www.cclmsy.cc ，解析至Vercel，国内访问速度较快
 3. 由于环境冲突，服务器系统重装、重建博客
 
 <!-- endtimeline -->

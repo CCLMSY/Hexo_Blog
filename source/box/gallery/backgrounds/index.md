@@ -10,16 +10,16 @@ comments: false
 <center><font font-family="ZhuZiAWan_light" size="5px"><b>&nbsp; 二次元壁纸 &nbsp;</b> <a class="gallery_link" href="/box/gallery/backgrounds/p2.html" data-pjax-state=""><mark class="hl-label blue">&nbsp;<b>风景壁纸</b>&nbsp;</mark></a> &nbsp; <a class="gallery_link" href="/box/gallery/backgrounds/p3.html" data-pjax-state=""><mark class="hl-label blue">&nbsp;<b>萌宠壁纸</b>&nbsp;</mark></a> &nbsp; <a class="gallery_link" href="/box/gallery/backgrounds/p4.html" data-pjax-state=""><mark class="hl-label blue">&nbsp;<b>手机壁纸</b>&nbsp;</mark></a> &nbsp;</font></center>
 
 {% gallery %} 
-![p1]( https://sourse.cclmsy.cc/Backgrounds/ECY/ECY1.jpg )
-![p2]( https://sourse.cclmsy.cc/Backgrounds/ECY/ECY2.jpg )
-![p3]( https://sourse.cclmsy.cc/Backgrounds/ECY/ECY3.jpg )
-![p4]( https://sourse.cclmsy.cc/Backgrounds/ECY/ECY4.jpg )
-![p5]( https://sourse.cclmsy.cc/Backgrounds/ECY/ECY5.jpg )
-![p6]( https://sourse.cclmsy.cc/Backgrounds/ECY/ECY6.jpg )
-![p7]( https://sourse.cclmsy.cc/Backgrounds/ECY/ECY7.webp )
-![p8]( https://sourse.cclmsy.cc/Backgrounds/ECY/ECY8.jpg )
-![p9]( https://sourse.cclmsy.cc/Backgrounds/ECY/ECY9.jpg )
-![p10]( https://sourse.cclmsy.cc/Backgrounds/ECY/ECY10.webp )
+![p1]( /TMP/Backgrounds/ECY/ECY1.jpg )
+![p2]( /TMP/Backgrounds/ECY/ECY2.jpg )
+![p3]( /TMP/Backgrounds/ECY/ECY3.jpg )
+![p4]( /TMP/Backgrounds/ECY/ECY4.jpg )
+![p5]( /TMP/Backgrounds/ECY/ECY5.jpg )
+![p6]( /TMP/Backgrounds/ECY/ECY6.jpg )
+![p7]( /TMP/Backgrounds/ECY/ECY7.webp )
+![p8]( /TMP/Backgrounds/ECY/ECY8.jpg )
+![p9]( /TMP/Backgrounds/ECY/ECY9.jpg )
+![p10]( /TMP/Backgrounds/ECY/ECY10.webp )
 
 {% endgallery %} 
 

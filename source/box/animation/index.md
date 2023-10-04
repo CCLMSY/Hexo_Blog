@@ -8,16 +8,16 @@ comments: false
 
 <div class="gallery-group-main">
 
-{% galleryGroup '烟花特效' '烟花特效' ' https://haiyong.site/demo/fireworks2.html' https://sourse.cclmsy.cc/Siteshot/Fireworks.png %}
+{% galleryGroup '烟花特效' '烟花特效' ' https://haiyong.site/demo/fireworks2.html' /TMP/Siteshot/Fireworks.png %}
 
-{% galleryGroup '圣诞树' '只使用 CSS 制作的动画圣诞树' 'https://haiyong.site/demo/christmastree1.html' https://sourse.cclmsy.cc/Siteshot/ChristmasTree.png %}
+{% galleryGroup '圣诞树' '只使用 CSS 制作的动画圣诞树' 'https://haiyong.site/demo/christmastree1.html' /TMP/Siteshot/ChristmasTree.png %}
 
-{% galleryGroup '黑色炫酷时钟' '时钟 2.0 版本' 'https://haiyong.site/demo/clock2.html' https://sourse.cclmsy.cc/Siteshot/Clock.png  %}
+{% galleryGroup '黑色炫酷时钟' '时钟 2.0 版本' 'https://haiyong.site/demo/clock2.html' /TMP/Siteshot/Clock.png  %}
 
-{% galleryGroup '日夜切换' '日夜切换动画' 'https://haiyong.site/demo/daynight.html' https://sourse.cclmsy.cc/Siteshot/Daynight.png %}
+{% galleryGroup '日夜切换' '日夜切换动画' 'https://haiyong.site/demo/daynight.html' /TMP/Siteshot/Daynight.png %}
 
-{% galleryGroup '七彩雨' '彩色的雨' 'https://haiyong.site/demo/qicaiyu.html' https://sourse.cclmsy.cc/Siteshot/RainbowRain.png %}
+{% galleryGroup '七彩雨' '彩色的雨' 'https://haiyong.site/demo/qicaiyu.html' /TMP/Siteshot/RainbowRain.png %}
 
-{% galleryGroup '多啦A梦的时光机' '带你穿越到过去或未来' 'https://haiyong.site/demo/chuanyueshikong.html' https://sourse.cclmsy.cc/Siteshot/TimeTravel.png %}
+{% galleryGroup '多啦A梦的时光机' '带你穿越到过去或未来' 'https://haiyong.site/demo/chuanyueshikong.html' /TMP/Siteshot/TimeTravel.png %}
 
 </div>
