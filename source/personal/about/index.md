@@ -5,13 +5,14 @@ date: 2022-08-10 16:05:11
 
 # 1.线路信息🚁
 - 主域名： www.cclmsy.cc 
-  均解析至Vercel，Vercel有全球的泛播节点，兼具全球CDN功能，国内访问速度较快 (Ping：70-80ms)
+  解析至Vercel，Vercel有全球的泛播节点，兼具全球CDN功能，国内访问速度较快 (Ping：70-80ms)
+- 备用域名： www.cclmsy.top
+  解析至cloudflare，Cloudflare也具有全球泛播节点，其为一家位于美国的跨国科技企业，总部位于旧金山，国内速度一般 (Ping值：150-200ms)
 - 顶级域名： cclmsy.cc
   目前重定向至主域名 www.cclmsy.cc
 - 初始域名： cclmsy.github.io
   直链至Github泛播，国内速度较慢 (Ping：80-120ms)
-- **使用VPN访问可能导致网页资源加载出现问题**
-- **主域名暂未取得备案号，目前可能无法通过主域名正常访问**
+- **域名暂未取得备案号，需要通过国际网络访问**
 
 # 2.技术栈&框架🔧
 - 博客框架：[Hexo 6.3.0](https://github.com/hexojs/hexo)
