@@ -1,9 +1,35 @@
-- class_name: 0.推荐网站🍔
-  class_desc: 这里是最熟悉的小伙伴或者赞助商，当然是最前排啦//
+- class_name: 0.鸣谢🍔
+  class_desc: 本网站的搭建得益于以下开源作者
   link_list: 
     - name: Fomalhaut🥝
       link: https://www.fomal.cc/
       avatar: https://www.fomal.cc/assets/avatar.webp
       descr: Future is now 🍭🍭🍭
       siteshot: https://source.fomal.cc/siteshot/www.fomal.cn.jpg
-
+    - name: Hexo
+      link: https://hexo.io/zh-cn/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、简洁且高效的博客框架
+      siteshot: https://source.fomal.cc/siteshot/hexo.io.jpg
+    - name: Jerry
+      link: https://butterfly.js.org/
+      avatar: https://butterfly.js.org/img/avatar.png
+      descr: A Simple and Card UI Design theme for Hexo
+      siteshot: https://source.fomal.cc/siteshot/butterfly.js.org.jpg
+    - name: Eurkon
+      link: https://blog.eurkon.com/
+      avatar: https://blog.eurkon.com/images/user/avatar.jpg
+      descr: 及时当勉励，岁月不待人
+      siteshot: https://source.fomal.cc/siteshot/blog.eurkon.com.jpg
+    - name: Jerry
+      link: https://butterfly.js.org/
+      avatar: https://butterfly.js.org/img/avatar.png
+      descr: A Simple and Card UI Design theme for Hexo
+      siteshot: https://source.fomal.cc/siteshot/butterfly.js.org.jpg
+    - name: Jerry
+      link: https://butterfly.js.org/
+      avatar: https://butterfly.js.org/img/avatar.png
+      descr: A Simple and Card UI Design theme for Hexo
+      siteshot: https://source.fomal.cc/siteshot/butterfly.js.org.jpg
+    
+      
