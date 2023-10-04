@@ -7,7 +7,7 @@ date: 2022-08-10 16:05:11
 - 主域名： www.cclmsy.cc 
   解析至Vercel，Vercel有全球的泛播节点，兼具全球CDN功能，国内访问速度较快 (Ping：70-80ms)
 - 备用域名： [www.cclmsy.top](www.cclmsy.top)
-  解析至cloudflare，Cloudflare也具有全球泛播节点，其为一家位于美国的跨国科技企业，总部位于旧金山，国内速度一般 (Ping值：150-200ms)
+  解析至Cloudflare，Cloudflare也具有全球泛播节点，其为一家位于美国的跨国科技企业，总部位于旧金山，国内速度一般 (Ping值：150-200ms)
 - 顶级域名： cclmsy.cc
   目前重定向至主域名 www.cclmsy.cc
 - 初始域名： cclmsy.github.io
