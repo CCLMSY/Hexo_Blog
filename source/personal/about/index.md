@@ -22,7 +22,8 @@ date: 2022-08-10 16:05:11
 - 评论系统： [Twikoo](https://twikoo.js.org/)系统 + [Vercel](https://vercel.com/)部署 + [MongoDB](https://www.mongodb.com)提供存储服务
 - 资源库与图床：[Github](https://github.com/)仓库 + [Vercel](https://vercel.com/)部署
 - CDN：[TianliCDN](https://tianli-blog.club/jsd/) + [Staticfile CDN](http://www.staticfile.org/) + [75CDN](https://cdn.baomitu.com/) + [字节跳动静态资源公共库](https://cdn.bytedance.com/) + [elemecdn](https://npm.elemecdn.com/) 等
-- 静态资源压缩: [gulp](https://npm.elemecdn.com/) + [JS & CSS Minifier (Minify)](https://github.com/olback/es6-css-minify/tree/3.0)
+- 静态资源压缩：[gulp](https://npm.elemecdn.com/) + [JS & CSS Minifier (Minify)](https://github.com/olback/es6-css-minify/tree/3.0)
+- 图片无损压缩：[TinyPNG](https://tinypng.com/)
 - 自动部署：[Git 钩子](https://git-scm.com/) + [Github Action](https://blog.csdn.net/weixin_43669978/article/details/122392448)
 - 音乐平台：[hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer) + [MetingJS](https://github.com/metowolf/MetingJS)
 - 博客统计：[不蒜子](https://aoaoao.info/321.html) + [百度统计](https://tongji.baidu.com/) + [51la](https://v6.51.la/) + [Echarts](https://echarts.apache.org/zh/index.html)提供可视化图表服务
