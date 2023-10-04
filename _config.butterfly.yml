@@ -656,7 +656,7 @@ cnzz_analytics:
 
 # Cloudflare Analytics
 # https://www.cloudflare.com/zh-tw/web-analytics/
-cloudflare_analytics: e770efb59f1b48cb868ac4d8f3883138
+cloudflare_analytics: 
 
 # Microsoft Clarity
 # https://clarity.microsoft.com/
@@ -1172,6 +1172,7 @@ inject:
     - <style id="defineBg"></style> # 自定义背景选项
     - <style id="menu_shadow"></style> # 菜单发光样式
     - <script src="https://npm.elemecdn.com/echarts@4.9.0/dist/echarts.min.js"></script> # echarts
+    - <script src="https://npm.elemecdn.com/echarts@4.9.0/map/js/china.js"></script> # 绘制地图需要另外添加 china.js
 
   bottom:
     - <script src="https://cdn.staticfile.org/jquery/3.6.3/jquery.min.js"></script> # jQuery

@@ -18,7 +18,7 @@ date: 2022-08-10 16:05:11
 - 主题：[Butterfly 4.3.1](https://butterfly.js.org/) 
 - 源码仓库：[Github](https://github.com/)
 - 托管与部署：本网站采部署于：[Vercel](https://vercel.com/) + [Github Pages](https://pages.github.com/)
-- 评论系统： [Twikoo](https://twikoo.js.org/)系统 + [Vercel](https://vercel.com/)部署 + MongoDB提供存储服务
+- 评论系统： [Twikoo](https://twikoo.js.org/)系统 + [Vercel](https://vercel.com/)部署 + [MongoDB](https://www.mongodb.com)提供存储服务
 - 资源库与图床：[Github](https://github.com/)仓库 + [Vercel](https://vercel.com/)部署
 - CDN：[TianliCDN](https://tianli-blog.club/jsd/) + [Staticfile CDN](http://www.staticfile.org/) + [75CDN](https://cdn.baomitu.com/) + [字节跳动静态资源公共库](https://cdn.bytedance.com/) + [elemecdn](https://npm.elemecdn.com/) 等
 - 静态资源压缩: [gulp](https://npm.elemecdn.com/) + [JS & CSS Minifier (Minify)](https://github.com/olback/es6-css-minify/tree/3.0)
@@ -29,6 +29,7 @@ date: 2022-08-10 16:05:11
 - 开发语言：HTML5 + CSS3 + JavaScript + Pug + YML等
 - 版权声明：详见[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 - 维护日志：见[旧时光](/site/time)栏目
+- 鸣谢：[Fomalhaut🥝](https://www.fomal.cc/) 提供博客开源
 
 # 3.关于本人💫
 

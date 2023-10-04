@@ -674,8 +674,8 @@ if (document.body.clientWidth > 992) {
         zoom: 0.9,
         borderRadius: 5 + 'px',
         right: 55.6 + 'px',
-        nekoImg: "https://bu.dusays.com/2022/07/20/62d812db74be9.png",
-        hoverMsg: "春天啦~",
+        nekoImg: "/assets/Cat.png",
+        hoverMsg: "秋天啦~",
         color: "var(--theme-color)",
         during: 500,
         blog_body: "body",
@@ -3461,22 +3461,22 @@ function createWinbox() {
 
 {% folding cyan, 查看适配手机的背景 %}
 <div class="bgbox">
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb1.webp)" class="imgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb1.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb2.webp)" class="imgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb2.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb3.webp)" class="imgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb3.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb4.webp)" class="imgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb4.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb5.webp)" class="imgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb5.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb6.webp)" class="imgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb6.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb7.webp)" class="imgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb7.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb8.webp)" class="imgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb8.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb9.webp)" class="imgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb9.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb10.webp)" class="imgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb10.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb11.webp)" class="imgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb11.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb12.webp)" class="imgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb12.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb13.webp)" class="imgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb13.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb14.webp)" class="imgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb14.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb15.webp)" class="imgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb15.webp)')"></a>
-<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb16.webp)" class="imgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb16.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb1.webp)" class="pimgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb1.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb2.webp)" class="pimgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb2.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb3.webp)" class="pimgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb3.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb4.webp)" class="pimgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb4.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb5.webp)" class="pimgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb5.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb6.webp)" class="pimgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb6.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb7.webp)" class="pimgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb7.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb8.webp)" class="pimgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb8.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb9.webp)" class="pimgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb9.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb10.webp)" class="pimgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb10.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb11.webp)" class="pimgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb11.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb12.webp)" class="pimgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb12.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb13.webp)" class="pimgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb13.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb14.webp)" class="pimgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb14.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb15.webp)" class="pimgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb15.webp)')"></a>
+<a href="javascript:;" rel="noopener external nofollow" style="background-image:url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb16.webp)" class="pimgbox" onclick="changeBg('url(http://sourse.cclmsy.cc/Backgrounds/Mobile/mb16.webp)')"></a>
 
 </div>
 {% endfolding %}
