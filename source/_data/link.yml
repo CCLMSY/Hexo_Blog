@@ -1,4 +1,4 @@
-- class_name: 0.鸣谢🍔
+- class_name: 鸣谢🍔
   class_desc: 本网站的搭建得益于以下开源作者
   link_list: 
     - name: Fomalhaut🥝
@@ -21,15 +21,11 @@
       avatar: https://blog.eurkon.com/images/user/avatar.jpg
       descr: 及时当勉励，岁月不待人
       siteshot: https://source.fomal.cc/siteshot/blog.eurkon.com.jpg
-    - name: Jerry
-      link: https://butterfly.js.org/
-      avatar: https://butterfly.js.org/img/avatar.png
+    - name: 安知鱼
+      link: https://blog.anheyu.com/
+      avatar: https://img01.anheyu.com/useruploads/90/2023/04/23/6444e85234e51.jpg
       descr: A Simple and Card UI Design theme for Hexo
-      siteshot: https://source.fomal.cc/siteshot/butterfly.js.org.jpg
-    - name: Jerry
-      link: https://butterfly.js.org/
-      avatar: https://butterfly.js.org/img/avatar.png
-      descr: A Simple and Card UI Design theme for Hexo
-      siteshot: https://source.fomal.cc/siteshot/butterfly.js.org.jpg
-    
-      
+      siteshot: https://source.fomal.cc/siteshot/anzhiy.cn.jpg
+- class_name: 友人帐✨
+  class_desc: 相遇即是缘分——
+  link_list: 
