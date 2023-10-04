@@ -4,7 +4,7 @@ date: 2022-08-10 16:05:11
 ---
 
 # 1.线路信息🚁
-- 主域名： www.cclmsy.cc | blog.cclmsy.cc
+- 主域名： www.cclmsy.cc 
   均解析至Vercel，Vercel有全球的泛播节点，兼具全球CDN功能，国内访问速度较快 (Ping：70-80ms)
 - 顶级域名： cclmsy.cc
   目前重定向至主域名 www.cclmsy.cc
@@ -17,13 +17,14 @@ date: 2022-08-10 16:05:11
 - 博客框架：[Hexo 6.3.0](https://github.com/hexojs/hexo)
 - 主题：[Butterfly 4.3.1](https://butterfly.js.org/) 
 - 源码仓库：[Github](https://github.com/)
-- 托管与部署：本网站采部署于：[Vercel](https://vercel.com/) + [Github Pages](https://pages.github.com/)
+- 托管与部署：本网站采用多线部署，包括 [Vercel](https://vercel.com/) + [Github Pages](https://pages.github.com/) + [Cloudflare](https://www.cloudflare.com/zh-cn/)
 - 评论系统： [Twikoo](https://twikoo.js.org/)系统 + [Vercel](https://vercel.com/)部署 + [MongoDB](https://www.mongodb.com)提供存储服务
 - 资源库与图床：[Github](https://github.com/)仓库 + [Vercel](https://vercel.com/)部署
 - CDN：[TianliCDN](https://tianli-blog.club/jsd/) + [Staticfile CDN](http://www.staticfile.org/) + [75CDN](https://cdn.baomitu.com/) + [字节跳动静态资源公共库](https://cdn.bytedance.com/) + [elemecdn](https://npm.elemecdn.com/) 等
 - 静态资源压缩: [gulp](https://npm.elemecdn.com/) + [JS & CSS Minifier (Minify)](https://github.com/olback/es6-css-minify/tree/3.0)
+- 自动部署：[Git 钩子](https://git-scm.com/) + [Github Action](https://blog.csdn.net/weixin_43669978/article/details/122392448)
 - 音乐平台：[hexo-tag-aplayer](https://github.com/MoePlayer/hexo-tag-aplayer) + [MetingJS](https://github.com/metowolf/MetingJS)
-- 博客统计：[不蒜子](https://aoaoao.info/321.html) + [百度统计](https://tongji.baidu.com/) + [baidu-tongji-api爬虫](https://github.com/Eurkon/baidu-tongji-api) + [Vercel](https://vercel.com/)部署
+- 博客统计：[不蒜子](https://aoaoao.info/321.html) + [百度统计](https://tongji.baidu.com/) + [51la](https://v6.51.la/) + [Echarts](https://echarts.apache.org/zh/index.html)提供可视化图表服务
 - 异步加载与缓存加速技术：[Pjax](https://github.com/defunkt/jquery-pjax)
 - 弹窗框架支持：[Element](https://github.com/defunkt/jquery-pjax) + [Vue](https://github.com/vuejs/vue)
 - 开发语言：HTML5 + CSS3 + JavaScript + Pug + YML等

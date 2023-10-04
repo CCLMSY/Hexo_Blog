@@ -6,7 +6,7 @@
 title: CCLMSY💫
 subtitle: 
 description: 'Never forget nor regret.⭐'
-keywords: 'ACM,XCPC,CV,算法,代码,博客,Hexo'
+keywords: 'ACM,XCPC,算法,代码,博客,Hexo'
 author: 深翼💫
 language: zh-CN
 timezone: ''
@@ -243,8 +243,8 @@ gitcalendar:
   #   name: content
   #   index: 0
   # simplemode: true
-  user:  #git用户名
-  apiurl: ''
+  user: CCLMSY #git用户名
+  apiurl: 'https://gitcalendar.cclmsy.cc'
   minheight:
     pc: 320px #桌面端最小高度
     mibile: 0px #移动端最小高度
