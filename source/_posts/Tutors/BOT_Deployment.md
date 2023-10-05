@@ -1,5 +1,5 @@
 ---
-title: 
+title: 本地化部署一个QQ机器人
 date: '2023/10/6 17:00'
 categories: 教程
 keywords: Python
@@ -15,18 +15,19 @@ sticky:
 swiper_index:
 ---
 
-## 0. 序言
+# 0. 序言
 1. 本教程主要面向**Windows系统**用户
 
-## 1. 搭建前的准备工作：
-### 需要用到的工具
+# 1. 搭建前的准备工作：
+## 需要用到的工具
 - 操作系统：Windows10
 - 文本编辑器（强烈推荐使用VSCode）
 - Python3.11.5
 - 一个闲置的QQ账号
 
-### Python安装指南
+## Python安装指南
 参考我的这篇文章：[Python安装指南](/posts/c34e2ac0.html)
+
 10月2日发布的Python3.12.0版本，站长在10月5日安装机器人框架依赖时会报以下错误：
 ```
 ERROR: Could not build wheels for yarl, httptools, multidict, which is required to install pyproject.toml-based projects
@@ -36,4 +37,5 @@ ERROR: Could not build wheels for yarl, httptools, multidict, which is required 
 
 站长这里提供Windows64位版本的下载：[python-3.11.5-amd64](http://cclmsy.gitee.io/sourse/Tools/python-3.11.5-amd64.exe)
 
-## 2.
+# 2.安装Nonebot框架
+## 

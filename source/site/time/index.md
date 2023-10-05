@@ -5,6 +5,11 @@ comments: false
 ---
 
 {% timeline 小站建设进程 %}
+<!-- timeline 2023-10-5-->
+
+1. 转移资源库至Gitee，恢复所有资源的访问，并对部分资源进行了压缩处理
+
+<!-- endtimeline -->
 
 <!-- timeline 2023-10-4-->
 
