@@ -1,5 +1,5 @@
 ---
-title: Python安装指南
+title: 教程|Python安装指南
 date: '2023/10/5 17:00'
 categories: 教程
 keywords: Python
