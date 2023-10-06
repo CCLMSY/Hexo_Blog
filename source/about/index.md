@@ -4,6 +4,9 @@ date: 2022-08-10 16:05:11
 ---
 
 # 1.线路信息🚁
+- 当前国内稳定访问域名： cclmsy.gitee.io/index
+  部署于Gitee Pages，国内速度极快，但由于和国际平台的兼容性较差被一再弃用。目前作为域名被墙后的临时访问方案
+
 - 主域名： www.cclmsy.cc 
   解析至Vercel，Vercel有全球的泛播节点，兼具全球CDN功能，国内访问速度较快 (Ping：70-80ms)
 - 备用域名： [www.cclmsy.top](www.cclmsy.top)

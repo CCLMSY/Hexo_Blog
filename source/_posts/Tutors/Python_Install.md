@@ -21,8 +21,8 @@ swiper_index:
 
 - 注：Python于10月2日发布3.12.0版本，站长在10月5日安装项目依赖包时产生错误，故本教程采用先前成功过的Python3.11.5版本。
 
-Python 3.11.5下载链接：[Python 3.11.5](https://www.python.org/downloads/release/python-3115/)
-拉到页面底部，**根据你的系统选择对应的版本下载**，站长使用的是64位Windows系统。
+Python 3.11.5官方下载链接：[Python 3.11.5](https://www.python.org/downloads/release/python-3115/)
+拉到页面底部，**根据你的系统选择对应的版本下载**，站长使用的是64位Windows系统，国内大多数普通用户使用的一般也是这个版本。
 ![Download](http://cclmsy.gitee.io/sourse/Images/BOT/BOT_01.png)
 
 国内下载速度可能会有点慢，有条件的可以通过国际网络访问

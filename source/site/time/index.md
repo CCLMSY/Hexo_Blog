@@ -8,6 +8,7 @@ comments: false
 <!-- timeline 2023-10-5-->
 
 1. 转移资源库至Gitee，恢复所有资源的访问，并对部分资源进行了压缩处理
+2. 开启了Gitee Page，恢复了 cclmsy.gitee.io 的访问，作为临时访问方案
 
 <!-- endtimeline -->
 
@@ -29,7 +30,7 @@ comments: false
 
 <!-- timeline 2023-10-2-->
 
-1. 关闭了Gitee Page，不再支持 cclmsy.gitee.io 的访问
+1. 关闭了Gitee Page，不支持 cclmsy.gitee.io 的访问
 2. 创建了资源库、图床，转移了大部分网站资源
 3. 完成了 八宝箱-画廊 八宝箱-动画 页面的相关配置
 4. 接入IP定位，公告栏将根据定位显示欢迎信息
