@@ -173,7 +173,7 @@ nb plugin
 ```
 .\.venv\Scripts\activate
 ```
-如果遇到“禁止运行脚本”的报错，可以参考我的这篇文章来解决：[Windows系统无法激活Python虚拟环境的解决方案]((/posts/28dedfa6.html))
+如果遇到“禁止运行脚本”的报错，可以参考我的这篇文章来解决：[Windows系统无法激活Python虚拟环境的解决方案](/posts/28dedfa6.html)
 如果命令行开头出现一个括号，内容为你的项目名称，则代表Python虚拟环境已经成功激活。
 
 接下来你可以使用pip命令来管理你的插件：
