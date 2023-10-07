@@ -5,6 +5,13 @@ comments: false
 ---
 
 {% timeline 小站建设进程 %}
+
+<!-- timeline 2023-10-7-->
+
+1. 主域名提交备案。根据相关要求，暂时关闭主域名cclmsy.cc及其二级域名的解析
+
+<!-- endtimeline -->
+
 <!-- timeline 2023-10-5-->
 
 1. 转移资源库至Gitee，恢复所有资源的访问，并对部分资源进行了压缩处理

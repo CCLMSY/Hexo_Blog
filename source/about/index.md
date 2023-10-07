@@ -4,18 +4,19 @@ date: 2022-08-10 16:05:11
 ---
 
 # 1.线路信息🚁
-- 当前国内稳定访问域名： cclmsy.gitee.io/index
-  部署于Gitee Pages，国内速度极快，但由于和国际平台的兼容性较差被一再弃用。目前作为域名被墙后的临时访问方案
+- ✨当前国内稳定访问域名： cclmsy.gitee.io/index
+  部署于Gitee 
 
-- 主域名： www.cclmsy.cc 
-  解析至Vercel，Vercel有全球的泛播节点，兼具全球CDN功能，国内访问速度较快 (Ping：70-80ms)
 - 备用域名： [www.cclmsy.top](www.cclmsy.top)
   解析至Cloudflare，Cloudflare也具有全球泛播节点，其为一家位于美国的跨国科技企业，总部位于旧金山，国内速度一般 (Ping值：150-200ms)
-- 顶级域名： cclmsy.cc
-  目前重定向至主域名 www.cclmsy.cc
-- 初始域名： cclmsy.github.io
-  直链至Github泛播，国内速度较慢 (Ping：80-120ms)
-- **域名暂未取得备案号，可能需要通过国际网络访问**
+- 初始域名： cclmsy.github.io 
+  直链至Github泛播，国内速度较慢 (Ping：80-120ms)，可能需要通过国际网络访问
+
+## 当前主域名处于备案状态，以下域名关闭解析，无法访问
+- 主域名： www.cclmsy.cc 
+  解析至Vercel，Vercel有全球的泛播节点，兼具全球CDN功能，国内访问速度较快 (Ping：70-80ms) 
+- 顶级域名： cclmsy.cc 
+  重定向至主域名 www.cclmsy.cc 
 
 # 2.技术栈&框架🔧
 - 博客框架：[Hexo 6.3.0](https://github.com/hexojs/hexo)
@@ -39,8 +40,8 @@ date: 2022-08-10 16:05:11
 
 # 3.关于本人💫
 
-## 深翼/CCLMSY
-## Profile
+## 深翼/CCLMSY 
+## Profile 
 - 浙江宁波人
 - 22届 计算机科学与技术专业
 - 目前就读于 浙江省某双非商专
@@ -55,7 +56,6 @@ date: 2022-08-10 16:05:11
 - Email: 2502408581@qq.com
 
 {% note warning modern %}<b>非商免字体、网图</b>等资源未经授权仅限个人使用，不得用于商业用途。本站平时仅用于交流和学习，如涉及侵权请联系站长删除对应资源，谢谢！ —— 致版权方{% endnote %}
-
 
 
 <!-- ## 0.网站自述视频🎬
