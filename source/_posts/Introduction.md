@@ -20,7 +20,7 @@ copyright_url:
 copyright_info:
 highlight_shrink:
 sticky: 99
-swiper_index: 99
+swiper_index: 
 aside:
 ---
 
