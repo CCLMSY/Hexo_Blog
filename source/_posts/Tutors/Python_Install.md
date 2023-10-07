@@ -5,12 +5,11 @@ categories: 教程
 keywords: Python
 description: 安装Python、配置Python环境（附安装包）
 abbrlink: c34e2ac0
-toc:
+tags:
   - Python
   - 教程
 updated:
 cover:
-tags:
 sticky:
 swiper_index:
 ---

@@ -8,12 +8,11 @@ keywords:
   - 教程
 description: 赋予你的QQ机器人Chat-GPT的功能
 abbrlink: 863ffeb9
-toc:
+tags:
   - Python
   - 教程
 updated:
 cover:
-tags:
 sticky:
 swiper_index:
 ---

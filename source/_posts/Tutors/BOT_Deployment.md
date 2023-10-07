@@ -7,14 +7,13 @@ keywords:
   - 机器人
   - 教程
 abbrlink: 11f0411
-toc:
+tags:
   - Python
   - 机器人
   - 教程
 description: 拥有一个自己的QQ机器人难道不是一件很酷的事情吗//
 updated:
 cover:
-tags:
 sticky: 10
 swiper_index: 10
 ---

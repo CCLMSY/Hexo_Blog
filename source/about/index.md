@@ -3,6 +3,16 @@ title: 关于
 date: 2022-08-10 16:05:11
 ---
 
+# 0.当前主域名处于备案状态，部分功能暂时失效
+## 以下域名关闭解析，无法访问
+- 主域名： www.cclmsy.cc 
+  解析至Vercel，Vercel有全球的泛播节点，兼具全球CDN功能，国内访问速度较快 (Ping：70-80ms) 
+- 顶级域名： cclmsy.cc 
+  重定向至主域名 www.cclmsy.cc 
+## 以下功能暂时失效
+- Twikoo评论
+- Github贡献日历
+
 # 1.线路信息🚁
 - ✨当前国内稳定访问域名： cclmsy.gitee.io/index
   部署于Gitee 
@@ -11,12 +21,6 @@ date: 2022-08-10 16:05:11
   解析至Cloudflare，Cloudflare也具有全球泛播节点，其为一家位于美国的跨国科技企业，总部位于旧金山，国内速度一般 (Ping值：150-200ms)
 - 初始域名： cclmsy.github.io 
   直链至Github泛播，国内速度较慢 (Ping：80-120ms)，可能需要通过国际网络访问
-
-## 当前主域名处于备案状态，以下域名关闭解析，无法访问
-- 主域名： www.cclmsy.cc 
-  解析至Vercel，Vercel有全球的泛播节点，兼具全球CDN功能，国内访问速度较快 (Ping：70-80ms) 
-- 顶级域名： cclmsy.cc 
-  重定向至主域名 www.cclmsy.cc 
 
 # 2.技术栈&框架🔧
 - 博客框架：[Hexo 6.3.0](https://github.com/hexojs/hexo)
