@@ -564,7 +564,7 @@ facebook_comments:
 # Twikoo
 # https://github.com/imaegoo/twikoo
 twikoo:
-  envId: https://twikoo-comment.cclmsy.cc/
+  envId: https://twikoo.cclmsy.cc/
   region:
   visitor: false
   option:
