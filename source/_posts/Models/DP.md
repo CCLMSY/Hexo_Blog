@@ -1,7 +1,7 @@
 ---
 title: 动态规划（DP）
 date: '2023/9/22 20:00'
-updated: 2023/10/4 12：00
+updated: 2023/10/11 12：00
 categories: 笔记模板
 keywords: 动态规划
 description: 动态规划部分例题、板子代码
