@@ -12,11 +12,8 @@ sticky: 10
 swiper_index: 2
 abbrlink: '879e7329'
 ---
-
-# 动态规划（DP）
-
-## 一.子序列问题
-### 1.最长公共子序列(LCS)
+# 一.子序列问题
+## 1.最长公共子序列(LCS)
 O(mn)
 ```cpp
 #define N 1005
@@ -35,7 +32,8 @@ void solve()
 }
 ```
 
-### 2.最长上升子序列
+## 2.最长上升子序列
+### 2.1.DP
 O(n^2) 洛谷B3637
 ```cpp
 /*----------Code Area----------*/
@@ -57,7 +55,7 @@ void solve()
 }
 ```
 
-### 3.最长上升子序列
+### 2.2.贪心
 O(nlogn) 洛谷B3637
 贪心：维护当前子序列d，替换序列中不小于a[i]的第一个元素
 ```cpp
@@ -77,14 +75,15 @@ void solve()
 }
 ```
 
-## 二.背包DP
-### 1.DFS记忆化搜索
+# 二.背包DP
+## 1.01背包
+### 1.1.DFS记忆化搜索
 O(mn) 洛谷P1048
 ```cpp
 #define N 1005
-#define M 105
+#define W 105
 ll v[N]={0},w[N]={0};
-ll mem[M][N]={0};
+ll mem[W][N]={0};
 ll maxw,n;
 ll dfs(ll i,ll curw){
     if(mem[i][curw]) return mem[i][curw];
@@ -102,7 +101,7 @@ void solve()
 }
 ```
 
-### 2.01背包二维数组
+### 1.2.二维数组
 O(wn) M(wn) 洛谷P1048
 ```cpp
 /*----------Code Area----------*/
@@ -124,9 +123,8 @@ void solve()
 }
 ```
 
-### 3.01背包一维数组
+### 1.3.一维滚动数组
 O(wn) M(w) 洛谷P2871
-一维滚动数组空间优化
 ```cpp
 #define N 5005
 #define W 20005
@@ -145,9 +143,9 @@ void solve()
 }
 ```
 
-### 4.完全背包一维数组
+## 2.完全背包一维数组
 O(wn) M(w) 洛谷P1616
-一维滚动数组空间优化，和01背包唯一区别在剩余容量从小到大遍历，每个物品能取多次
+和01背包唯一区别在剩余容量从小到大遍历，每个物品能取多次
 ```cpp
 #define N 10005
 #define W 10000005
@@ -166,39 +164,137 @@ void solve()
 }
 ```
 
-### 5.多重背包
-$O(w\sum\limits\lg{cnt_i})$
-朴素想法：按有 $cnt_i$ 个的物品 $i$ 进行01背包
-二进制分组优化：对于每个物品，将其按二进制分组，捆绑一个物品
+## 3.多重背包
+### 3.1.朴素方法
+$O(w\sum cnt_i)$
+朴素方法：按有 $cnt_i$ 个的物品 $i$ ，进行01背包
 ```cpp
-#define N 10005
-#define W 10000005
-ll v[N]={0},w[N]={0},cnt[N]={0};
+#define N 100005
+#define W 100005
+ll v[N]={0},w[N]={0};
 ll dp[W]={0};
-ll n,maxw;
+ll n=0,maxw,tn;
 void solve()
 {
-    cin >> maxw >> n;ll tn=n,t,b;
-    FORLL(i,1,n) cin >> w[i] >> v[i] >> cnt[i];
-    FORLL(i,1,tn){//二进制分组
-        t=cnt[i];b=2;
-        while(t>b){
-            v[++n]=v[i]*b;
-            w[n]=v[i]*b;
-            t-=b;b*=2;
+    cin >> tn >> maxw;
+    ll tv,tw,cnt,n=0;
+    FORLL(i,1,tn){
+        cin >> tv >> tw >> cnt;
+        FORLL(j,1,cnt){
+            v[++n]=tv;
+            w[n]=tw;
         }
-        if(t) {v[++n]=v[i]*t;w[n]=v[i]*t;}
     }
-    FORLL(i,1,n) 
-        FORLL_rev(j,maxw,w[i]){
+    FORLL(i,1,n)
+        FORLL_rev(j,maxw,w[i])
             dp[j]=max(dp[j-w[i]]+v[i],dp[j]);
+    cout << dp[maxw] << endl;
+}
+```
+
+### 3.2.二进制分组
+$O(w\sum\lg{cnt_i})$
+二进制分组优化：对于每个物品，将其按二进制分组，捆绑一个物品
+```cpp
+#define N 100005
+#define W 100005
+ll v[N]={0},w[N]={0};
+ll dp[W]={0};
+ll n=0,maxw,tn;
+void solve()
+{
+    cin >> tn >> maxw;
+    ll tv,tw,cnt,n=0;
+    FORLL(i,1,tn){
+        cin >> tv >> tw >> cnt;
+        ll b=1;
+        while(cnt>b){
+            v[++n]=tv*b;
+            w[n]=tw*b;
+            cnt-=b;b*=2;
+        }
+        if(cnt) {v[++n]=tv*cnt;w[n]=tw*cnt;}
+    }
+    FORLL(i,1,n)
+        FORLL_rev(j,maxw,w[i])
+            dp[j]=max(dp[j-w[i]]+v[i],dp[j]);
+    cout << dp[maxw] << endl;
+}
+```
+
+## 4.混合背包
+$O(wn)$ 洛谷P1833
+01背包、多重背包和完全背包的缝合怪//
+```cpp
+#define N 100005
+#define W 100005
+ll v[N]={0},w[N]={0};
+bool flag[N]={0};
+ll dp[W]={0};
+ll n=0,maxw,tn;
+void solve()
+{
+    ll h1,m1,h2,m2;char tc;
+    cin >> h1 >> tc >> m1 >> h2 >> tc >> m2 >> tn;
+    maxw=abs((h2*60+m2)-(h1*60+m1));
+    ll tv,tw,cnt,n=0;
+    FORLL(i,1,tn){
+        cin >> tw >> tv >> cnt;
+        if(cnt){
+            ll b=1;
+            while(cnt>b){
+                v[++n]=tv*b;
+                w[n]=tw*b;
+                flag[n]=1;
+                cnt-=b;b*=2;
+            }//多重背包二进制分组
+            if(cnt) {v[++n]=tv*cnt;w[n]=tw*cnt;flag[n]=1;}
+        }else{
+            v[++n]=tv;
+            w[n]=tw;
+            flag[n]=0;
+        }
+    }
+    FORLL(i,1,n)
+        if(flag[i]){//01背包
+            FORLL_rev(j,maxw,w[i])
+                dp[j]=max(dp[j-w[i]]+v[i],dp[j]);
+        }else{//完全背包
+            FORLL(j,w[i],maxw)
+                dp[j]=max(dp[j-w[i]]+v[i],dp[j]);
         }
     cout << dp[maxw] << endl;
 }
 ```
 
-## 三.DP优化
-### 1. 单调队列优化DP
+## 5.二维费用背包
+$O(nw_1w_2)$ 洛谷P1855
+具有两种费用属性的背包问题，以01背包为例
+```cpp
+#define N 105
+#define W 205
+ll v[N]={0},w1[N]={0},w2[N]={0};
+ll dp[W][W]={0};//二维滚动数组
+ll n,maxw1,maxw2;
+void solve()
+{
+    cin >> n >> maxw1 >> maxw2;
+    FORLL(i,1,n){
+        cin >> w1[i] >> w2[i];
+        v[i]=1;//本题中价值均为1
+    }
+    FORLL(i,1,n)
+        FORLL_rev(j1,maxw1,w1[i])
+        FORLL_rev(j2,maxw2,w2[i])
+            dp[j1][j2]=max(dp[j1-w1[i]][j2-w2[i]]+v[i],dp[j1][j2]);
+    cout << dp[maxw1][maxw2] << endl;
+}
+```
+
+## 6.分组背包
+
+# 三.DP优化
+## 1. 单调队列优化DP
 O(mn) M(m) CF372C
 利用单调队列将每次区间DP均摊复杂度降至O(1)
 ```cpp
