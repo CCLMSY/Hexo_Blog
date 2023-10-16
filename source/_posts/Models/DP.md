@@ -143,7 +143,8 @@ void solve()
 }
 ```
 
-## 2.完全背包一维数组
+## 2.完全背包
+### 2.1.一维滚动数组
 O(wn) M(w) 洛谷P1616
 和01背包唯一区别在剩余容量从小到大遍历，每个物品能取多次
 ```cpp
@@ -160,6 +161,34 @@ void solve()
         FORLL(j,w[i],maxw){//和01背包唯一区别在从小到大遍历，每个物品能取多次
             dp[j]=max(dp[j-w[i]]+v[i],dp[j]);
         }
+    cout << dp[maxw] << endl;
+}
+```
+
+### 2.2.贪心优化
+O(wn) M(w) 洛谷P1616
+贪心思想：对于两件物品 $i,j$ ，如果 $w_i \le w_j \And v_i \ge v_j$ ，则只需保留 $i$ 
+```cpp
+#define N 10005
+#define W 10000005
+vector<pll> objs,tv;
+ll dp[W]={0};
+ll n,maxw,w,v;
+void solve()
+{
+    cin >> maxw >> n;
+    tv.resize(n);
+    for(auto &x:tv) cin >> x.first >> x.second;
+    SORT(tv);ll maxv=-1;
+    for(auto x:tv)
+        if(x.second>maxv)
+            {objs.emplace_back(x);maxv=x.second;}
+    for(auto x:objs){
+        w=x.first;v=x.second;
+        FORLL(j,w,maxw){//和01背包唯一区别在从小到大遍历，每个物品能取多次
+            dp[j]=max(dp[j-w]+v,dp[j]);
+        }
+    }
     cout << dp[maxw] << endl;
 }
 ```
@@ -278,6 +307,7 @@ ll dp[W][W]={0};//二维滚动数组
 ll n,maxw1,maxw2;
 void solve()
 {
+    
     cin >> n >> maxw1 >> maxw2;
     FORLL(i,1,n){
         cin >> w1[i] >> w2[i];
@@ -292,6 +322,74 @@ void solve()
 ```
 
 ## 6.分组背包
+$O(nw)$ 洛谷P1757
+01背包的进化体，每个组中最多能取1个物品
+```cpp
+#define N 65536
+ll maxw,n;
+ll v[105][N]={0},w[105][N]={0},dp[1000*N]={0};
+ll cnt[105]={0},mxid=0;
+void solve()
+{
+    cin >> maxw >> n;
+    ll tv,tw,id;
+    FORLL(i,1,n){
+        cin >> tw >> tv >> id;
+        cnt[id]++;
+        v[id][cnt[id]]=tv;
+        w[id][cnt[id]]=tw;
+        mxid=max(mxid,id);
+    }
+    FORLL(k,1,mxid)//对于每一组物品
+        FORLL_rev(j,maxw,0)//对于每一种容量（从后往前遍历，保证同组两种物品不同时取到）
+            FORLL(i,1,cnt[k]) if(j>=w[k][i])//放入该组每种物品时可达到的最大值
+                dp[j]=max(dp[j-w[k][i]]+v[k][i],dp[j]);
+    cout << dp[maxw] << endl;
+}
+```
+
+## 7.有依赖的背包
+$O(nw)$ 洛谷P1064
+分组背包的进化体，将所有主副件组合方案作为一组进行分组背包
+```cpp
+#define W 32005
+#define N 61
+ll maxw,n;
+ll w[N][4]={0},v[N][4]={0},dp[W]={0},cnt[N]={0};
+vector<ll> id_list;
+void solve()
+{
+    cin >> maxw >> n;
+    ll tw,tp,id;
+    FORLL(i,1,n){
+        cin >> tw >> tp >> id;
+        if(id==0){//0：纯主件
+            id=i;w[id][0]=tw;v[id][0]=tw*tp;
+            id_list.emplace_back(i);
+        }else if(cnt[id]==0){//1：主件+配件1
+            cnt[id]++;
+            w[id][1]=tw+w[id][0];
+            v[id][1]=tw*tp+v[id][0];
+        }else if(cnt[id]==1){//2：主件+配件2//3：主件+配件1+配件2
+            cnt[id]++;
+            w[id][2]=tw+w[id][0];
+            v[id][2]=tw*tp+v[id][0];
+            w[id][3]=tw+w[id][1];
+            v[id][3]=tw*tp+v[id][1];
+        }
+    } 
+    for(auto k:id_list){//对于每一组物品
+        ll t=0; if(cnt[k]==1) t=1; if(cnt[k]==2) t=3; 
+        FORLL_rev(j,maxw,0)//对于每一种容量（从后往前遍历，保证同组两种方案不同时取到）
+            FORLL(i,0,t) if(j>=w[k][i])//采取该组每种方案时可达到的最大值
+                dp[j]=max(dp[j-w[k][i]]+v[k][i],dp[j]);
+    }
+    cout << dp[maxw] << endl;
+}
+```
+## 8.进阶问题
+### 1.求具体方案
+
 
 # 三.DP优化
 ## 1. 单调队列优化DP
