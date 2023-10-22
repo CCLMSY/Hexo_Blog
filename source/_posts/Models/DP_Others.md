@@ -1,9 +1,9 @@
 ---
-title: 动态规划-杂项
+title: 动态规划-其他
 date: '2023/9/22 20:00'
 categories: 笔记模板
 keywords: 动态规划
-description: 动态规划-杂项//一些不成类的题
+description: 动态规划-其他//其他类型的题目篇幅较小，故整合到一起
 tags:
   - 动态规划
   - 笔记
@@ -34,7 +34,7 @@ void solve()
 
 ## 2.最长上升子序列
 ### 2.1.DP
-O(n^2) 洛谷B3637
+$O(n^2)$ 洛谷B3637
 ```cpp
 /*----------Code Area----------*/
 #define N 10005
@@ -56,7 +56,7 @@ void solve()
 ```
 
 ### 2.2.贪心
-O(nlogn) 洛谷B3637
+$O(n\log n)$ 洛谷B3637
 贪心：维护当前子序列d，替换序列中不小于a[i]的第一个元素
 ```cpp
 #define N 10005
@@ -75,7 +75,63 @@ void solve()
 }
 ```
 
-# 二.DP优化
+# 二.区间DP
+$O(n^3)$ NOI1995/LOJ10147
+分治：父问题的答案由子问题集中最优解转移
+```cpp
+#define N 205
+ll v[N*2]={0},S[N*2]={0};
+ll dpmx[N*2][N*2]={0},dpmn[N*2][N*2]={0};
+void solve(){
+    ll n,t;cin >> n;
+    FORLL(i,1,n){
+        cin >> v[i];
+        v[i+n]=v[i];
+    }
+    FORLL(i,1,n*2) FORLL(j,1,n*2) dpmn[i][j]=INF;
+    FORLL(i,1,n*2) dpmn[i][i]=0;//Init
+    FORLL(i,1,n*2) S[i]=S[i-1]+v[i];
+    FORLL(len,1,n){//枚举区间长度
+        FORLL(i,1,n*2-len+1){
+            ll j=i+len-1;//根据长度和i算出j
+            FORLL(k,i,j-1){//枚举分界点
+                dpmx[i][j]=max(dpmx[i][j],dpmx[i][k]+dpmx[k+1][j]+S[j]-S[i-1]);
+                dpmn[i][j]=min(dpmn[i][j],dpmn[i][k]+dpmn[k+1][j]+S[j]-S[i-1]);
+            }//转移
+        }
+    }
+    ll mx=0,mn=INF;
+    FORLL(i,1,n+1) mx=max(mx,dpmx[i][i+n-1]);
+    FORLL(i,1,n+1) mn=min(mn,dpmn[i][i+n-1]);
+    cout << mn << endl << mx << endl;
+}
+```
+
+# 三.期望DP
+ATC-abc323_e
+某点的期望从此前的一段区间内转移
+```cpp
+#define N 1003
+#define X 10004
+ll dp[X]={1,0};//歌曲在t时刻切换的概率
+ll t[N]={0};
+void solve()
+{
+    ll n,x;cin >> n >> x;
+    FORLL(i,1,n) cin >> t[i];
+    ll invn=inv(n);//1/n
+    FORLL(i,1,x){
+        FORLL(j,1,n) if(i>=t[j])
+            addto(dp[i],dp[i-t[j]]);
+        multo(dp[i],invn);
+    }
+    ll re=0;
+    FORLL(i,max(0ll,x-t[1]+1),x) addto(re,dp[i]);
+    cout << multo(re,invn) << endl;
+}
+```
+
+# 四.DP优化
 ## 1. 单调队列优化DP
 O(mn) M(m) CF372C
 利用单调队列将每次区间DP均摊复杂度降至O(1)

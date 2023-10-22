@@ -16,11 +16,11 @@ abbrlink: 879e7329
 
 # 1.01背包
 ## 1.1.DFS记忆化搜索
-O(mn) 洛谷P1048
+$O(mn)$ [洛谷P1048](https://www.luogu.com.cn/problem/P1048)
 ```cpp
 #define N 1005
 #define W 105
-ll v[N]={0},w[N]={0};
+ll v[N]={0},w[N]={0};z
 ll mem[W][N]={0};
 ll maxw,n;
 ll dfs(ll i,ll curw){
@@ -40,7 +40,7 @@ void solve()
 ```
 
 ## 1.2.二维数组
-O(wn) M(wn) 洛谷P1048
+$O(wn) M(wn)$ [洛谷P1048](https://www.luogu.com.cn/problem/P1048)
 ```cpp
 /*----------Code Area----------*/
 #define N 1005
@@ -62,7 +62,7 @@ void solve()
 ```
 
 ## 1.3.一维滚动数组
-O(wn) M(w) 洛谷P2871
+$O(wn) M(w)$ [洛谷P2871](https://www.luogu.com.cn/problem/P2871)
 ```cpp
 #define N 5005
 #define W 20005
@@ -83,7 +83,7 @@ void solve()
 
 # 2.完全背包
 ## 2.1.一维滚动数组
-O(wn) M(w) 洛谷P1616
+$O(wn) M(w)$ [洛谷P1616](https://www.luogu.com.cn/problem/P1616)
 和01背包唯一区别在剩余容量从小到大遍历，每个物品能取多次
 ```cpp
 #define N 10005
@@ -104,7 +104,7 @@ void solve()
 ```
 
 ## 2.2.贪心优化
-O(wn) M(w) 洛谷P1616
+$O(wn) M(w)$ [洛谷P1616](https://www.luogu.com.cn/problem/P1616)
 贪心思想：对于两件物品 $i,j$ ，如果 $w_i \le w_j \And v_i \ge v_j$ ，则只需保留 $i$ 
 ```cpp
 #define N 10005
@@ -190,7 +190,7 @@ void solve()
 ```
 
 # 4.混合背包
-$O(wn)$ 洛谷P1833
+$O(wn)$ [洛谷P1833](https://www.luogu.com.cn/problem/P1833)
 01背包、多重背包和完全背包的缝合怪//
 ```cpp
 #define N 100005
@@ -235,7 +235,7 @@ void solve()
 ```
 
 # 5.二维费用背包
-$O(nw_1w_2)$ 洛谷P1855
+$O(nw_1w_2)$ [洛谷P1855](https://www.luogu.com.cn/problem/P1855)
 具有两种费用属性的背包问题，以01背包为例
 ```cpp
 #define N 105
@@ -260,7 +260,7 @@ void solve()
 ```
 
 # 6.分组背包
-$O(nw)$ 洛谷P1757
+$O(nw)$ [洛谷P1757](https://www.luogu.com.cn/problem/P1757)
 01背包的进化体，每个组中最多能取1个物品
 ```cpp
 #define N 65536
@@ -287,7 +287,7 @@ void solve()
 ```
 
 # 7.有依赖的背包
-$O(nw)$ 洛谷P1064
+$O(nw)$ [洛谷P1064](https://www.luogu.com.cn/problem/P1064)
 分组背包的进化体，将所有主副件组合方案作为一组进行分组背包
 ```cpp
 #define W 32005
@@ -344,7 +344,7 @@ void solve()
         FORLL(j,w[i],maxw){//和01背包唯一区别在从小到大遍历，每个物品能取多次
             if(dp[j-w[i]]+v[i]>dp[j]){
                 dp[j]=dp[j-w[i]]+v[i];
-                g[j]=i;
+                g[j]=i;//记录在容量j下选择了物品i
             }
         }
     cout << dp[maxw] << endl;
@@ -358,8 +358,10 @@ void solve()
 ```
 
 ## 2.装满方案计数
+对于给定的一个背包容量、物品费用、其他关系等的问题，求装到一定容量的方案总数。
+### 2.1.不考虑顺序
 $O(wn)$
-对于给定的一个背包容量、物品费用、其他关系等的问题，求装到一定容量的方案总数。以01背包为例
+不同的选择顺序看作相同方案。以01背包为例
 ```cpp
 #define N 5005
 #define W 20005
@@ -370,17 +372,36 @@ void solve()
 {
     cin >> n >> maxw;
     FORLL(i,1,n) cin >> w[i] >> v[i];
-    FORLL(i,1,n) 
+    FORLL(i,1,n) //先遍历物品
         FORLL_rev(j,maxw,w[i]){//01背包从大到小遍历，每个物品只能取一次
-            dp[j]=dp[j]+dp[j-w[i]];
+            dp[j]=dp[j]+dp[j-w[i]];//不选+选
         }
+    cout << dp[maxw] << endl;
+}
+```
+
+### 2.2.考虑顺序
+$O(wn)$ ZJNU C1299_B
+不同的选择顺序看作不同方案。以完全背包为例
+> 从 $0$ 到 $n$ ，每次可以前进 {1,2,4} ，求方案数
+```cpp
+#define W 205
+ll w[4]={0,1,2,4};
+ll dp[W]={1,0};
+ll maxw;
+void solve()
+{
+    cin >> maxw;
+    FORLL(j,1,maxw) //先遍历容量
+        FORLL(i,1,3) if(j>=w[i])
+            dp[j]=dp[j]+dp[j-w[i]];
     cout << dp[maxw] << endl;
 }
 ```
 
 ## 3.最优方案计数
 $O(wn)$
-求最优背包方案数，以01背包为例
+求最优背包方案数，以01背包为例，g[j]代表容量j下最优方案数
 ```cpp
 #define N 5005
 #define W 20005
@@ -402,7 +423,7 @@ void solve()
 ```
 
 ## 4.求第k优解
-$O(wnk)$ HDU2639
+$O(wnk)$ [HDU2639](https://vjudge.net/problem/HDU-2639)
 求背包的第k优解，以01背包为例 
 ```cpp
 #define N 105
