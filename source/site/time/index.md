@@ -6,6 +6,12 @@ comments: false
 
 {% timeline 小站建设进程 %}
 
+<!-- timeline 2023-10-26-->
+
+1. 主域名备案审核通过，恢复主域名cclmsy.cc及其二级域名的解析，所有功能恢复正常
+
+<!-- endtimeline -->
+
 <!-- timeline 2023-10-7-->
 
 1. 主域名提交备案。根据相关要求，暂时关闭主域名cclmsy.cc及其二级域名的解析
