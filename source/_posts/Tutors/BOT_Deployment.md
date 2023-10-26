@@ -44,20 +44,20 @@ ERROR: Could not build wheels for yarl, httptools, multidict, which is required 
 
 Python 3.11.5官方下载链接：[Python 3.11.5](https://www.python.org/downloads/release/python-3115/)
 国内下载速度可能会有点慢，有条件的可以通过国际网络访问。
-站长这里提供Windows64位版本的下载：[python-3.11.5-amd64](http://cclmsy.gitee.io/sourse/Tools/python-3.11.5-amd64.exe)
+站长这里提供Windows64位版本的下载：[python-3.11.5-amd64](http://source.cclmsy.cc/Tools/python-3.11.5-amd64.exe)
 
 ## 1.3.VSCode安装指南
 VSCode是一款轻量化的IDE，支持市面上绝大多数编程语言，具有良好的扩展性，且具有非常友好的代码补全功能。~~是CC站长的最爱~~
 下载完成后直接一路确定傻瓜式安装即可//部分自定义配置说明如下：
-![VSCode](http://cclmsy.gitee.io/sourse/Images/BOT/BOT_12.png)
+![VSCode](http://source.cclmsy.cc/Images/BOT/BOT_12.png)
 
 VSCode官网：[Visual Studio Code](https://code.visualstudio.com/)
-同样国内下载比较慢，站长这里提供Windows64位1.82.2版本的下载，VSCode支持软件内更新到最新版本：[VSCodeUserSetup-x64-1.82.2](http://cclmsy.gitee.io/sourse/Tools/VSCodeUserSetup-x64-1.82.2.exe)
+同样国内下载比较慢，站长这里提供Windows64位1.82.2版本的下载，VSCode支持软件内更新到最新版本：[VSCodeUserSetup-x64-1.82.2](http://source.cclmsy.cc/Tools/VSCodeUserSetup-x64-1.82.2.exe)
 
 # 2.安装Nonebot框架
 ## 2.1.创建文件夹
 创建一个文件夹用于存放项目，然后用VSCode打开这个文件夹。
-![InstallNonebot1](http://cclmsy.gitee.io/sourse/Images/BOT/BOT_13.png)
+![InstallNonebot1](http://source.cclmsy.cc/Images/BOT/BOT_13.png)
 ## 2.2.安装pipx
 点击“终端-新建终端”（或直接按住Ctrl+Shift+`）创建一个终端，在终端中输入以下命令：
 ```
@@ -65,7 +65,7 @@ python -m pip install --user pipx
 python -m pipx ensurepath
 ```
 如果出现以下提示，请调整你的账户环境变量：
-![InstallNonebot2](http://cclmsy.gitee.io/sourse/Images/BOT/BOT_14.png)
+![InstallNonebot2](http://source.cclmsy.cc/Images/BOT/BOT_14.png)
 调整账户的环境变量参考：[Python安装指南](/posts/c34e2ac0.html)
 
 **安装完成后，关闭当前VSCode窗口，重启VSCode后才会生效。**
@@ -74,7 +74,7 @@ python -m pipx ensurepath
 ```
 pipx install nb-cli
 ```
-![InstallNonebot3](http://cclmsy.gitee.io/sourse/Images/BOT/BOT_15.png)
+![InstallNonebot3](http://source.cclmsy.cc/Images/BOT/BOT_15.png)
 如果出现无法找到`pipx`命令的情况（例如出现“Command not found”字样），请确认你在上一步中账户环境变量设置正确，且**完全重启**VSCode。
 如果你确信自己的所有配置完全正确，请尝试重启你的计算机。
 
@@ -84,7 +84,7 @@ pipx install nb-cli
 nb create
 ```
 选择“bootstrap (初学者或用户)”，回车。
-![Create1](http://cclmsy.gitee.io/sourse/Images/BOT/BOT_16.png)
+![Create1](http://source.cclmsy.cc/Images/BOT/BOT_16.png)
 
 等待资源加载，加载完成后进行如下配置：
  (键盘上下键移动光标，空格选中，回车确认)
@@ -95,7 +95,7 @@ nb create
 [?] 立即安装依赖? y
 [?] 创建虚拟环境? y
 ```
-![Create2](http://cclmsy.gitee.io/sourse/Images/BOT/BOT_17.png)
+![Create2](http://source.cclmsy.cc/Images/BOT/BOT_17.png)
 脚手架会自动创建并引入所需的依赖包。
 
 最后选择安装内置插件`echo`，这是一个简单的复读回显插件，可以用于测试你的机器人是否正常运行：
@@ -106,7 +106,7 @@ nb create
 如果你操作失误没有安装，请删除当前项目文件夹并返回第`3`节开头。
 
 出现以下提示则项目创建成功
-![Create3](http://cclmsy.gitee.io/sourse/Images/BOT/BOT_18.png)
+![Create3](http://source.cclmsy.cc/Images/BOT/BOT_18.png)
 
 在终端中输入以下命令进入项目文件夹：
 ```
@@ -114,7 +114,7 @@ cd [你的项目的名字]
 ```
 **请注意：后续的操作均需要你的终端处于项目文件夹中。**
 如果你使用的是VSCode，方便起见，你可以直接选择打开项目文件夹作为VSCode工作文件夹：
-![Create4](http://cclmsy.gitee.io/sourse/Images/BOT/BOT_22.png)
+![Create4](http://source.cclmsy.cc/Images/BOT/BOT_22.png)
 这样后续VSCode新建终端就会默认处于项目文件夹中。
 
 # 4.编辑配置文件
@@ -162,7 +162,7 @@ nb plugin search [关键词]  # 搜索商店插件
 nb plugin
 ```
 将进入控制台交互模式，键盘上下键移动光标，空格选中，回车确认。
-![Plugin1](http://cclmsy.gitee.io/sourse/Images/BOT/BOT_21.png)
+![Plugin1](http://source.cclmsy.cc/Images/BOT/BOT_21.png)
 按照提示输入插件名称即可。
 ### 5.1.3.方法三：使用pip安装
 如果你在第3节中正确创建了项目，那么你的项目文件夹中会有一个`.venv`文件夹，这是项目的Python虚拟环境文件夹。
@@ -199,20 +199,20 @@ nb plugin install nonebot-plugin-gocqhttp
 nb run
 ```
 出现以下提示则安装和运行成功：
-![gocq1](http://cclmsy.gitee.io/sourse/Images/BOT/BOT_23.png)
+![gocq1](http://source.cclmsy.cc/Images/BOT/BOT_23.png)
 按住Ctrl单击链接进入`go-cqhttp`的WebUI界面
-![gocq2](http://cclmsy.gitee.io/sourse/Images/BOT/BOT_24.png)
+![gocq2](http://source.cclmsy.cc/Images/BOT/BOT_24.png)
 
 # 6.登录QQ机器人与检查
 ## 6.1.登录QQ机器人
 点击左上角“添加账号”，输入要部署的QQ账号，密码留空，设备类型选择“Android Watch”：
 （注：也可以选择账号密码登录，但可能出现账号被风控无法登录的情况，手表协议登录相对比较稳定。）
-![QQLogin1](http://cclmsy.gitee.io/sourse/Images/BOT/BOT_25.png)
+![QQLogin1](http://source.cclmsy.cc/Images/BOT/BOT_25.png)
 添加完成后点击启动，待加载出二维码后点击“显示登录二维码”。
 用你的手机登录要部署的QQ账号，扫描二维码登录。
-![QQLogin2](http://cclmsy.gitee.io/sourse/Images/BOT/BOT_26.png)
+![QQLogin2](http://source.cclmsy.cc/Images/BOT/BOT_26.png)
 登陆完成后会有消息提示如下：
-![QQLogin3](http://cclmsy.gitee.io/sourse/Images/BOT/BOT_27.png)
+![QQLogin3](http://source.cclmsy.cc/Images/BOT/BOT_27.png)
 
 ## 6.2.检查QQ机器人是否正常运行
 登录你自己的QQ账号，添加机器人为QQ好友，然后按以下格式发送给机器人消息：
@@ -222,7 +222,7 @@ nb run
 请注意，不论你有没有配置命令起始字符，在这里echo的开头**必须包含"\"字符**。
 如果机器人回复了和自定义消息相同的内容，那么恭喜你，你已经成功地完成了QQ机器人的部署。
 {% hideBlock 点我预览示例, --theme-color %}
-<img src="http://cclmsy.gitee.io/sourse/Images/BOT/BOT_28.png" alt="image" style="zoom:67%;" />
+<img src="http://source.cclmsy.cc/Images/BOT/BOT_28.png" alt="image" style="zoom:67%;" />
 {% endhideBlock %}
 
 这一步完成后，建议将项目文件夹复制一份作为备份。

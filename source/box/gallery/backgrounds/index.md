@@ -10,16 +10,16 @@ comments: false
 <center><font font-family="ZhuZiAWan_light" size="5px"><b>&nbsp; 二次元壁纸 &nbsp;</b> <a class="gallery_link" href="/box/gallery/backgrounds/p2.html" data-pjax-state=""><mark class="hl-label blue">&nbsp;<b>风景壁纸</b>&nbsp;</mark></a> &nbsp; <a class="gallery_link" href="/box/gallery/backgrounds/p3.html" data-pjax-state=""><mark class="hl-label blue">&nbsp;<b>萌宠壁纸</b>&nbsp;</mark></a> &nbsp; <a class="gallery_link" href="/box/gallery/backgrounds/p4.html" data-pjax-state=""><mark class="hl-label blue">&nbsp;<b>手机壁纸</b>&nbsp;</mark></a> &nbsp;</font></center>
 
 {% gallery %} 
-![p1]( http://cclmsy.gitee.io/sourse/Backgrounds/ECY/ECY1.jpg )
-![p2]( http://cclmsy.gitee.io/sourse/Backgrounds/ECY/ECY2.jpg )
-![p3]( http://cclmsy.gitee.io/sourse/Backgrounds/ECY/ECY3.jpg )
-![p4]( http://cclmsy.gitee.io/sourse/Backgrounds/ECY/ECY4.jpg )
-![p5]( http://cclmsy.gitee.io/sourse/Backgrounds/ECY/ECY5.jpg )
-![p6]( http://cclmsy.gitee.io/sourse/Backgrounds/ECY/ECY6.jpg )
-![p7]( http://cclmsy.gitee.io/sourse/Backgrounds/ECY/ECY7.webp )
-![p8]( http://cclmsy.gitee.io/sourse/Backgrounds/ECY/ECY8.jpg )
-![p9]( http://cclmsy.gitee.io/sourse/Backgrounds/ECY/ECY9.jpg )
-![p10]( http://cclmsy.gitee.io/sourse/Backgrounds/ECY/ECY10.webp )
+![p1]( http://source.cclmsy.cc/Backgrounds/ECY/ECY1.jpg )
+![p2]( http://source.cclmsy.cc/Backgrounds/ECY/ECY2.jpg )
+![p3]( http://source.cclmsy.cc/Backgrounds/ECY/ECY3.jpg )
+![p4]( http://source.cclmsy.cc/Backgrounds/ECY/ECY4.jpg )
+![p5]( http://source.cclmsy.cc/Backgrounds/ECY/ECY5.jpg )
+![p6]( http://source.cclmsy.cc/Backgrounds/ECY/ECY6.jpg )
+![p7]( http://source.cclmsy.cc/Backgrounds/ECY/ECY7.webp )
+![p8]( http://source.cclmsy.cc/Backgrounds/ECY/ECY8.jpg )
+![p9]( http://source.cclmsy.cc/Backgrounds/ECY/ECY9.jpg )
+![p10]( http://source.cclmsy.cc/Backgrounds/ECY/ECY10.webp )
 
 {% endgallery %} 
 

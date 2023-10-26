@@ -6,7 +6,7 @@ comments: false
 
 <div class="gallery-group-main">
 
-{% galleryGroup '封面专区' '本站用作文章封面的图片' '/box/gallery/covers' http://cclmsy.gitee.io/sourse/Covers/Cover_99.webp %}
+{% galleryGroup '封面专区' '本站用作文章封面的图片' '/box/gallery/covers' http://source.cclmsy.cc/Covers/Cover_99.webp %}
 
-{% galleryGroup '背景专区' '收藏的一些的背景与壁纸' '/box/gallery/backgrounds' http://cclmsy.gitee.io/sourse/Backgrounds/ECY/ECY1.jpg %}
+{% galleryGroup '背景专区' '收藏的一些的背景与壁纸' '/box/gallery/backgrounds' http://source.cclmsy.cc/Backgrounds/ECY/ECY1.jpg %}
 </div>
