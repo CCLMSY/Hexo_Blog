@@ -204,6 +204,5 @@ comments: false
 ![p198]( http://source.cclmsy.cc/Covers/Cover_198.webp )
 ![p199]( http://source.cclmsy.cc/Covers/Cover_199.webp )
 ![p200]( http://source.cclmsy.cc/Covers/Cover_200.webp )
-![p201]( http://source.cclmsy.cc/Covers/Cover_201.webp )
 
 {% endgallery %}
