@@ -51,6 +51,9 @@ date: 2022-08-10 16:05:11
 - CodeForces Rating 1600+
 - 云二次元 卡牌游戏爱好者
 
+## Growth Timeline
+
+
 ## Contact With Me
 - QQ/Wechat: 2502408581
 - Email: 2502408581@qq.com
