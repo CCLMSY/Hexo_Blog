@@ -219,7 +219,7 @@ nb run
 ```
 \echo [自定义消息]
 ```
-请注意，不论你有没有配置命令起始字符，在这里echo的开头**必须包含"\"字符**。
+请注意，不论你有没有配置命令起始字符，在这里echo的开头**必须包含"\\"字符**。
 如果机器人回复了和自定义消息相同的内容，那么恭喜你，你已经成功地完成了QQ机器人的部署。
 {% hideBlock 点我预览示例, --theme-color %}
 <img src="http://source.cclmsy.cc/Images/BOT/BOT_28.png" alt="image" style="zoom:67%;" />
