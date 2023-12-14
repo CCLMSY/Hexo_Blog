@@ -66,7 +66,7 @@ python -m pipx ensurepath
 ```
 如果出现以下提示，请调整你的账户环境变量：
 ![InstallNonebot2](http://source.cclmsy.cc/Images/BOT/BOT_14.png)
-调整账户的环境变量参考：[Python安装指南](/posts/c34e2ac0.html)
+调整账户的环境变量参考：[教程|Python安装指南](/posts/c34e2ac0.html)
 
 **安装完成后，关闭当前VSCode窗口，重启VSCode后才会生效。**
 ## 2.3.安装Nonebot脚手架
@@ -174,7 +174,7 @@ nb plugin
 ```
 .\.venv\Scripts\activate
 ```
-如果遇到“禁止运行脚本”的报错，可以参考我的这篇文章来解决：[Windows系统无法激活Python虚拟环境的解决方案](/posts/28dedfa6.html)
+如果遇到“禁止运行脚本”的报错，可以参考我的这篇文章来解决：[教程|Windows系统无法激活Python虚拟环境的解决方案](/posts/28dedfa6.html)
 如果命令行开头出现一个括号，内容为你的项目名称，则代表Python虚拟环境已经成功激活。
 
 接下来你可以使用pip命令来管理你的插件：

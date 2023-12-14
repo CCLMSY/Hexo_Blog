@@ -6,6 +6,12 @@ comments: false
 
 {% timeline 小站建设进程 %}
 
+<!-- timeline 2023-12-14-->
+
+1. 关闭了Gitee Page，不再支持 cclmsy.gitee.io 的访问
+
+<!-- endtimeline -->
+
 <!-- timeline 2023-10-26-->
 
 1. 主域名备案审核通过，恢复主域名cclmsy.cc及其二级域名的解析，所有功能恢复正常
@@ -95,7 +101,5 @@ comments: false
 2. 完善Butterfly的基本配置项，本地化部署成功，代码托管于Github
 
 <!-- endtimeline -->
-
-
 
 {% endtimeline %}
