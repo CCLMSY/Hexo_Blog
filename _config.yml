@@ -273,17 +273,17 @@ magnet:
   devide: 3
   display:
     - name: 算法竞赛
-      display_name: CCの算法竞赛题解
+      display_name: CCの竞赛题解
       icon: 🍡
-    - name: 笔记模板
-      display_name: CCの代码模板笔记
+    - name: 代码/模板
+      display_name: CCの代码/模板
       icon: 🍼
     - name: 教程
       display_name: CCの教程
       icon: 🍉
-    # - name: Java基础
-    #   display_name: 小FのJava基础笔记
-    #   icon: 🍟
+    - name: 学习笔记
+      display_name: CCの学习笔记
+      icon: 🍟
     # - name: 数据库
     #   display_name: 小Fの数据库笔记
     #   icon: 🍨

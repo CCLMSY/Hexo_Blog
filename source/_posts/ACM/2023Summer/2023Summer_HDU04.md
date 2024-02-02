@@ -188,7 +188,7 @@ bool prop(ll n){//判断n==p^i
     }
     ll p=n;
     while(p==n) p=Pollard_Rho(n);
-    if(prop(p)&&prop(n/p)) return true;
+    if(prop\(p\)&&prop(n/p)) return true;
     return false;
 }
 void solve()

@@ -2,7 +2,7 @@
 title: 动态规划-背包DP
 date: '2023/9/22 20:00'
 updated: 2023/10/22 14:50
-categories: 笔记模板
+categories: 代码/模板
 keywords: 动态规划
 description: 动态规划-背包DP部分例题、板子代码
 tags:
@@ -16,7 +16,7 @@ abbrlink: 879e7329
 
 # 1.01背包
 ## 1.1.DFS记忆化搜索
-$O(mn)$ [洛谷P1048](https://www.luogu.com.cn/problem/P1048)
+$O(wn)$ [洛谷P1048](https://www.luogu.com.cn/problem/P1048)
 ```cpp
 #define N 1005
 #define W 105

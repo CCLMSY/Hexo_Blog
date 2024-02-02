@@ -2,8 +2,8 @@
 title: 最大堆/最小堆
 date: '2023/2/30 20:00'
 updated: '2023/10/7 19:00'
-categories: 笔记模板
-description: CCの算法竞赛宏定义
+categories: 代码/模板
+description: 最大堆/最小堆
 tags:
   - 模板
 abbrlink: 5d23e3a3

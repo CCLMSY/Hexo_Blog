@@ -1,7 +1,7 @@
 ---
 title: 动态规划-其他
 date: '2023/9/22 20:00'
-categories: 笔记模板
+categories: 代码/模板
 keywords: 动态规划
 description: 动态规划-其他//其他类型的题目篇幅较小，故整合到一起
 tags:
