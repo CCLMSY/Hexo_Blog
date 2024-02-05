@@ -61,8 +61,8 @@ $=3P(A)-3P(A)^2+0=\frac{9}{16} \Rightarrow P(A)=\frac{1}{4}或P(A)=\frac{3}{4}$(
 
 ### 4. $X\text{~}U(a,b)$
 1. 分布名称：均匀分布
-2. 分布函数：$$F(x)=\begin{cases} 0&,x<a \\ \frac{x-a}{b-a}&,a\leq x\leq b \\ 1 &, x>b \end{cases}$$
-3. 概率密度函数：$$f(x)=\begin{cases} \frac{1}{b-a}&,a\leq x\leq b \\ 0&,\text{其他}\end{cases}$$
+2. 分布函数：$$F(x)=\begin{cases} 0&,x<a \\\\ \frac{x-a}{b-a}&,a\leq x\leq b \\\\ 1 &, x>b \end{cases}$$
+3. 概率密度函数：$$f(x)=\begin{cases} \frac{1}{b-a}&,a\leq x\leq b \\\\ 0&,\text{其他}\end{cases}$$
 4. 期望：$$E(X)=\frac{a+b}{2}$$
 5. 方差：$$D(X)=\frac{(b-a)^2}{12}$$
 
@@ -127,9 +127,9 @@ $=3P(A)-3P(A)^2+0=\frac{9}{16} \Rightarrow P(A)=\frac{1}{4}或P(A)=\frac{3}{4}$(
 
 ### 5. 可加性
 1. 前提：$$X_i$$ 独立
-2. 泊松分布：$$X_i\text{~}P(\lambda _i)\Rightarrow\sum X_i\text{~}P(\sum \lambda _i)$$
-3. 二项分布：$$X_i\text{~}B(n_i,p)\Rightarrow\sum X_i\text{~}B(\sum n_i,p)$$
-4. 正态分布：$$X_i\text{~}N(\mu _i,\sigma _i^2)\Rightarrow\sum k_iX_i\text{~}N(\sum k_i\mu _i,\sum k_i^2\sigma _i^2)$$
+2. 泊松分布：$$X_i\text{~}P(\lambda _i)$$ $$\Rightarrow$$ $$\sum X_i\text{~}P(\sum \lambda _i)$$
+3. 二项分布：$$X_i\text{~}B(n_i,p)$$ $$\Rightarrow$$ $$\sum X_i\text{~}B(\sum n_i,p)$$
+4. 正态分布：$$X_i\text{~}N(\mu _i,\sigma _i^2)$$ $$\Rightarrow$$ $$\sum k_iX_i\text{~}N(\sum k_i\mu _i,\sum k_i^2\sigma _i^2)$$
 
 ### 6. 最值分布函数
 1. $$F_{max}(x)=P(X_1\leq x,X_2\leq x,\cdots,X_n\leq x)=\prod F(x_i)$$
@@ -152,8 +152,8 @@ $$\Rightarrow f_N(x)=\frac{dF_N(x)}{dx}=\begin{cases}\frac{nx^{n-1}}{\theta^n}&,
 
 ## 专：随机变量函数的分布
 ### 1. 离散型随机变量
-1. 一维：$$P(X=x_i)=p_i$$，$$Y=h(X)\Rightarrow P(Y=y_j)=\sum\limits_{h(x_i)=y_j}p_i$$
-2. 二维：$$P(X=x_i,Y=y_j)=p_{ij}$$，$$Z=h(X,Y)\Rightarrow P(Z=z_k)=\sum\limits_{h(x_i,y_j)=z_k}p_{ij}$$
+1. 一维：$$P(X=x_i)=p_i$$，$$Y=h(X)$$ $$\Rightarrow$$ $$P(Y=y_j)=\sum\limits_{h(x_i)=y_j}p_i$$
+2. 二维：$$P(X=x_i,Y=y_j)=p_{ij}$$，$$Z=h(X,Y)$$ $$\Rightarrow$$ $$P(Z=z_k)=\sum\limits_{h(x_i,y_j)=z_k}p_{ij}$$
 
 ### 2. 连续型随机变量
 #### 一维例题：$X\text{~}N(0,1)$ , $$Y=X^2$$，求$$f_Y(y)$$
@@ -239,6 +239,7 @@ $$
 2. $E(CX)=CE(X)$
 3. $E(X\pm Y)=E(X)\pm E(Y)$
 4. $X,Y$ 独立 $\Rightarrow E(XY)=E(X)E(Y)$
+
 ### 2. 方差
 方差：$$D(X)=E(X-E(X))^2=E(X^2)-[E(X)]^2$$
 
@@ -353,16 +354,16 @@ $\overline{X}=A_1$，$S^2=\frac{n-1}{n}B_2$，$B_1=0$
 
 ### 3. $X$~$$\chi^2(n)$$
 1. 分布名称：卡方分布
-2. 概述：$X_1,X_2,\cdots,X_n$独立同分布，且$X_i\text{~}N(0,1)$，则$$X=\sum X_i^2\text{~}\chi^2(n)$$
+2. 概述：$$X_1,X_2,\cdots,X_n独立同分布，且X_i\text{~}N(0,1)，则X=\sum X_i^2\text{~}\chi^2(n)$$
 3. 上$$\alpha$$分位数：$$\chi_\alpha^2(n)$$
 4. 期望：$$E(X)=n$$
 5. 方差：$$D(X)=2n$$
-6. $n\rightarrow\infty$时，$\chi^2(n)$近似于$N(n,2n)$
-7. 可加性：$$X_i\text{~}\chi^2(n_i)\Rightarrow\sum X_i\text{~}\chi^2(\sum n_i)$$
+6. $n\rightarrow\infty时，\chi^2(n)近似于N(n,2n)$
+7. 可加性：$$X_i\text{~}\chi^2(n_i)$$ $$\Rightarrow$$ $$\sum X_i\text{~}\chi^2(\sum n_i)$$
 
 ### 4. $X$~$$t(n)$$
 1. 分布名称：t分布
-2. 概述：$X\text{~}N(0,1)$，$$Y\text{~}\chi^2(n)$$，$$X,Y$$独立，$$\frac{X}{\sqrt{\frac{Y}{n}}}\text{~}t(n)$$
+2. 概述：$$X\text{~}N(0,1)，Y\text{~}\chi^2(n)，X,Y独立，\frac{X}{\sqrt{\frac{Y}{n}}}\text{~}t(n)$$
 3. 上$$\alpha$$分位数：$$t_\alpha(n)$$
 4. 期望：$$E(X)=0$$ 对称性：$$t_{1-\alpha}(n)=-t_\alpha(n)$$
 5. $$n\rightarrow\infty$$时，$$t(n)$$近似于$N(0,1)$
@@ -377,15 +378,15 @@ $\overline{X}=A_1$，$S^2=\frac{n-1}{n}B_2$，$B_1=0$
 <div STYLE="page-break-after: always;"></div>
 
 ### 6.单正态总体下的抽样分布
-1. $\overline{X}\text{~}N(\mu,\frac{\sigma^2}{n})$
-2. $U=\frac{\overline{X}-\mu}{\sigma}{\sqrt{n}}\text{~}N(0,1)$
-3. $T=\frac{\overline{X}-\mu}{S}{\sqrt{n}}\text{~}t(n-1)$
-4. $C=\frac{(n-1)S^2}{\sigma^2}=\frac{1}{\sigma^2}\sum(X_i-\overline{X})^2\text{~}\chi^2(n-1)$
+1. $$\overline{X}\text{~}N(\mu,\frac{\sigma^2}{n})$$
+2. $$U=\frac{\overline{X}-\mu}{\sigma}{\sqrt{n}}\text{~}N(0,1)$$
+3. $$T=\frac{\overline{X}-\mu}{S}{\sqrt{n}}\text{~}t(n-1)$$
+4. $$C=\frac{(n-1)S^2}{\sigma^2}=\frac{1}{\sigma^2}\sum(X_i-\overline{X})^2\text{~}\chi^2(n-1)$$
 
 ### 7.两正态总体下的抽样分布
-1. $\overline{X}-\overline{Y}\text{~}N(\mu_1-\mu_2,\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}) \Rightarrow U=\frac{(\overline{X}-\overline{Y})-(\mu_1-\mu_2)}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}}\text{~}N(0,1)$
-2. $\frac{(\overline{X}-\overline{Y})-(\mu_1-\mu_2)}{S_w\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}\text{~}t(n_1+n_2-2)\Rightarrow T=\frac{(\overline{X}-\overline{Y})-(\mu_1-\mu_2)}{S_w\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}\text{~}t(n_1+n_2-2)$
-3. $\frac{S_1^2/\sigma_1^2}{S_2^2/\sigma_2^2}\text{~}F(n_1-1,n_2-1)\Rightarrow F=\frac{S_1^2/\sigma_1^2}{S_2^2/\sigma_2^2}\text{~}F(n_1-1,n_2-1)$
+1. $$\overline{X}-\overline{Y}\text{~}N(\mu_1-\mu_2,\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}) \Rightarrow U=\frac{(\overline{X}-\overline{Y})-(\mu_1-\mu_2)}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}}\text{~}N(0,1)$$
+2. $$\frac{(\overline{X}-\overline{Y})-(\mu_1-\mu_2)}{S_w\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}\text{~}t(n_1+n_2-2) \Rightarrow T=\frac{(\overline{X}-\overline{Y})-(\mu_1-\mu_2)}{S_w\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}\text{~}t(n_1+n_2-2)$$
+3. $$\frac{S_1^2/\sigma_1^2}{S_2^2/\sigma_2^2}\text{~}F(n_1-1,n_2-1) \Rightarrow F=\frac{S_1^2/\sigma_1^2}{S_2^2/\sigma_2^2}\text{~}F(n_1-1,n_2-1)$$
 
 注：$$S_w^2=\frac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}$$
 
@@ -408,24 +409,30 @@ $$\Rightarrow \mu=A_1，\sigma^2=B_2$$
 
 ### 3. 点估计的优良性
 1. 无偏性：$$E(\hat{\theta})=\theta$$
-2. 有效性：$$D(\hat{\theta})\leq D(\tilde{\theta})，\hat{\theta}=\overline{X}$$时最有效
+2. 有效性：$$D(\hat{\theta})\leq D(\tilde{\theta})$$，$$\hat{\theta}=\overline{X}$$时最有效
 
-#### 例题：设$$X_1,X_2,\cdots,X_n$$是来自总体$X$的样本，$X$的密度函数为$$f(x;\sigma)=\frac{1}{2\sigma}e^{-\frac{|x|}{\sigma}}$$，其中$$\sigma>0$$为未知参数，求$$\sigma$$的矩估计和极大似然估计。
-矩估计
+#### 例题
+设$$X_1,X_2,\cdots,X_n$$是来自总体$X$的样本，$X$的密度函数为$$f(x;\sigma)=\frac{1}{2\sigma}e^{-\frac{|x|}{\sigma}}$$，其中$$\sigma>0$$为未知参数，求$$\sigma$$的矩估计和极大似然估计。
 
-$$E(X)=\int_{-\infty}^{+\infty}xf(x;\sigma)dx=\frac{1}{2\sigma}\int_{-\infty}^{+\infty}xe^{-\frac{|x|}{\sigma}}dx=0，无法求出\sigma，故用二阶矩求解$$
+- 矩估计
+
+$$E(X)=\int_{-\infty}^{+\infty}xf(x;\sigma)dx=\frac{1}{2\sigma}\int_{-\infty}^{+\infty}xe^{-\frac{|x|}{\sigma}}dx=0$$
+
+$$无法求出\sigma，故用二阶矩求解$$ 
 
 $$E(X^2)=\int_{-\infty}^{+\infty}x^2f(x;\sigma)dx=\frac{1}{2\sigma}\int_{-\infty}^{+\infty}x^2e^{-\frac{|x|}{\sigma}}dx=2\sigma^2$$
 
-$$A_2=2\hat\sigma^2，解得\hat\sigma=\sqrt{\frac{A_2}{2}}$$
+$$A_2=2\hat\sigma^2 ，解得\hat\sigma=\sqrt{\frac{A_2}{2}}$$
 
-极大似然估计
+- 极大似然估计
 
 $$L(\hat\sigma)=\prod f(x_i;\hat\sigma)=\prod\frac{1}{2\hat\sigma}e^{-\frac{|x_i|}{\hat\sigma}}=\frac{1}{2^n\hat\sigma^n}e^{-\frac{\sum|x_i|}{\hat\sigma}}$$
 
 $$\ln L(\hat\sigma)=-n\ln(2\hat\sigma)-\frac{\sum|x_i|}{\hat\sigma}$$
 
-$$\frac{d\ln L(\hat\sigma)}{d\hat\sigma}=-\frac{n}{\hat\sigma}+\frac{\sum|x_i|}{\hat\sigma^2}=0，解得\hat\sigma=\frac{\sum|x_i|}{n}$$
+$$\frac{d\ln L(\hat\sigma)}{d\hat\sigma}=-\frac{n}{\hat\sigma}+\frac{\sum|x_i|}{\hat\sigma^2}=0$$
+
+$$解得\hat\sigma=\frac{\sum|x_i|}{n}$$
 
 
 <div STYLE="page-break-after: always;"></div>
@@ -437,7 +444,6 @@ $$\frac{d\ln L(\hat\sigma)}{d\hat\sigma}=-\frac{n}{\hat\sigma}+\frac{\sum|x_i|}{
 3. 计算检验统计量的值$$u$$，若$$u\in C$$，则拒绝$$H_0$$，否则接受$$H_0$$
 
 ### 2. 单个正态总体的假设检验
-
 #### $$H_0:\mu=\mu_0$$，$$H_1:\mu\neq\mu_0$$
 1. $$\sigma^2已知，U=\frac{\overline{X}-\mu_0}{\sigma/\sqrt{n}}\text{~}N(0,1)$$
 2. $$\sigma^2未知，T=\frac{\overline{X}-\mu_0}{S/\sqrt{n}}\text{~}t(n-1)$$
@@ -446,10 +452,9 @@ $$\frac{d\ln L(\hat\sigma)}{d\hat\sigma}=-\frac{n}{\hat\sigma}+\frac{\sum|x_i|}{
 $$\chi^2=\frac{(n-1)S^2}{\sigma_0^2}\text{~}\chi^2(n-1)$$
 
 ### 3. 两个正态总体的假设检验
-
 #### $$H_0:\mu_1=\mu_2$$，$$H_1:\mu_1\neq\mu_2$$
 1. $$\sigma_1^2,\sigma_2^2已知，U=\frac{(\overline{X}-\overline{Y})-(\mu_1-\mu_2)}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}}\text{~}N(0,1)$$
 2. $$\sigma_1^2,\sigma_2^2未知，T=\frac{(\overline{X}-\overline{Y})-(\mu_1-\mu_2)}{S_w\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}\text{~}t(n_1+n_2-2)$$
 
-#### $$H_0:\sigma_1^2=\sigma_2^2，H_1:\sigma_1^2\neq\sigma_2^2$$
+#### $$H_0:\sigma_1^2=\sigma_2^2$$，$$H_1:\sigma_1^2\neq\sigma_2^2$$
 $$F=\frac{S_1^2}{S_2^2}\text{~}F(n_1-1,n_2-1)$$
