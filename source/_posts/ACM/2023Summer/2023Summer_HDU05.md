@@ -42,8 +42,6 @@ aside:
  $O(nm)$
 
 ## 参考代码
-> 参考代码为已AC代码主干，其中部分功能需读者自行实现
-
 ```cpp
 vector<pll> typh,shel;
 vector<double> frac,dist;
@@ -115,8 +113,6 @@ void solve()
  $O(n)$
 
 ## 参考代码
-> 参考代码为已AC代码主干，其中部分功能需读者自行实现
-
 ```cpp
 int RGB(char c){
     switch (c)
@@ -226,8 +222,6 @@ void solve()
 
 
 ## 参考代码
-> 参考代码为已AC代码主干，其中部分功能需读者自行实现
-
 ```cpp
 vector<ll> deg,cnt;
 void solve()

@@ -47,8 +47,6 @@ aside:
 $O(n)$
 
 ## 参考代码
-> 参考代码为已AC代码主干，其中部分功能需读者自行实现
-
 ```cpp
 void solve_s(deque<int> s,int now){
     ll n=s.size(),i,j;;
@@ -91,8 +89,6 @@ void solve(){
 2. 并查集：标准并查集板子题，裸套即可
 
 ## 参考代码
-> 参考代码为已AC代码主干，其中部分功能需读者自行实现
-
 1. DFS
 ```cpp
 #define N 100005
@@ -184,8 +180,6 @@ $$
 DP：$O(n^2)$
 
 ## 参考代码
-> 参考代码为已AC代码主干，其中部分功能需读者自行实现
-
 ```cpp
 #define N 5005
 ll n,p;
@@ -240,8 +234,6 @@ void solve()
  $O(\sqrt n)$
 
 ## 参考代码
-> 参考代码为已AC代码主干，其中部分功能需读者自行实现
-
 ```cpp
 bool Is_Sqr(ll x){
     ll t=sqrt(x);

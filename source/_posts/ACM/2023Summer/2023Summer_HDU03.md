@@ -48,8 +48,6 @@ aside:
 易得此处 $a=sz/gcd(n,sz)$ ， $b=n/gcd(n,sz)$ 
 
 ## 参考代码
-> 参考代码为已AC代码主干，其中部分功能需读者自行实现
-
 ```cpp
 void solve()
 {

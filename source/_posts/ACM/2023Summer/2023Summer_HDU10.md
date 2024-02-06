@@ -57,8 +57,6 @@ $E_3=\dfrac{1}{n}+\dfrac{2}{n}(1+E_2)+\dfrac{n-3}{n}(1+E_3)$
 得到最终期望为：$E=\dfrac{2}{n}E_2+\dfrac{n-2}{n}E_3=\dfrac{2n-1}{3}$
 
 ## 参考代码
-> 参考代码为已AC代码主干，其中部分功能需读者自行实现
-
 ```cpp
 void solve()
 {
@@ -86,8 +84,6 @@ void solve()
 $O(n\log n)$
 
 ## 参考代码
-> 参考代码为已AC代码主干，其中部分功能需读者自行实现
-
 ```cpp
 void solve()
 {

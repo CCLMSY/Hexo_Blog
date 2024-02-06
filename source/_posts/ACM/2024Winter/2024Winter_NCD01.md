@@ -1,26 +1,12 @@
 ---
 title: 题解|2024牛客寒假01
-date: 2024/2/2
 tags:
   - 2024牛客寒假
 categories: 算法竞赛
-top_img: false
-comments: true
-toc: true
+mathjax: true
 abbrlink: e5822278
+date: 2024/2/2
 description: 题解|2024牛客寒假01
-updated:
-keywords:
-cover:
-toc_number:
-toc_style_simple:
-copyright:
-copyright_author:
-copyright_author_href:
-copyright_url:
-copyright_info:
-highlight_shrink:
-aside:
 ---
 
 # A.DFS搜索
@@ -266,4 +252,72 @@ buaa的检验：不满足在范围内，返回第1步，即重新生成一个圆
 两种算法下，生成结果的圆心和半径的分布是不同的。
 明显bit的方法圆心是均匀分布在平面内的，而buaa的方法不是。
 
-根据抽样分布原理，大量独立同分布随机变量和的极限分布是正态分布。因此对圆心
+根据抽样分布原理，大量独立同分布随机变量和的极限分布是正态分布。
+因此对样本建立统计量，使得两种算法下，该统计量有显著不同即可。
+此处建立的统计量$U$为：圆心到原点的距离的均值$A(\sqrt{x^2+y^2})$。
+用两种算法生成样本，暴算得到$U_{buaa}\approx56，U_{bit}\approx 75$。
+
+## 参考程序
+```cpp
+void solve()
+{
+    ll n;cin >> n;
+    double sum=0;
+    ll x,y;
+    FORLL(i,1,n)
+    {
+        cin >> x >> y;
+        sum+=sqrt(x*x+y*y);
+        cin >> x;
+    }sum/=n;
+    if(sum<65) cout << "buaa-noob" << endl;
+    else cout << "bit-noob" << endl;
+}
+```
+
+# L.要有光
+**诈骗题**
+## 题目大意
+给了一些几何形状的方程，求在**地面**（$z=0$）上的最大阴影面积
+
+## 解题思路
+题目拐弯抹角。
+保证符合题意的状态是光源处于$xOy$平面上($z=0$)。
+目的是求一个$xOy$平面上的梯形阴影的面积。
+上底长$2w$，下底长$4w$，高为$c$，面积为$3wc$。
+
+## 参考程序
+```cpp
+void solve()
+{
+    ll c,d,h,w;
+    cin >> c >> d >> h >> w;
+    cout << w*3*c << endl;
+}
+```
+
+# M.牛客老粉才知道的秘密
+**2签**
+## 题目大意
+某场比赛一共有$n$道题目，但每面只能显示$6$道。
+点击`下一页`时，如果后面的题目足够$6$题，则显示下面的$6$题，否则显示最后6题。
+点击`上一页`时，如果前面的题目足够$6$题，则显示上面的$6$题，否则显示最前6题。
+求比赛中可能出现在第一题位置的题目数量。
+
+## 解题思路
+如果题目数量是$6$的倍数，那页面可能的题目排布为$n/6$。
+如果题目数量不是$6$的倍数，
+从第一页到最后一页，可能的题目排布为$n/6+1$；
+从最后一页到第一页，可能的题目排布为$n/6+1$。
+去除首页尾页，可能的题目排布为$(n/6)*2$。
+
+## 参考程序
+```cpp
+#define N 200005
+void solve()
+{
+    ll n;cin >> n;
+    if(n%6==0) cout << n/6 << endl;
+    else cout << n/6*2 << endl;
+}
+```
