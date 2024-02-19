@@ -5,6 +5,7 @@ tags:
 categories: 学习笔记
 mathjax: true
 abbrlink: 2aad59c
+swiper_index: 99
 date: 2024-01-12 02:55:00
 description: 考前3天速通99分概率论の复习笔记
 ---

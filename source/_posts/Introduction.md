@@ -19,7 +19,6 @@ copyright_author_href:
 copyright_url:
 copyright_info:
 highlight_shrink:
-sticky: 99
 swiper_index: 
 aside:
 ---

@@ -9,7 +9,6 @@ tags:
   - 动态规划
   - 背包DP
   - 笔记
-sticky: 10
 swiper_index: 2
 abbrlink: 879e7329
 ---

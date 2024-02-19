@@ -14,7 +14,6 @@ tags:
 description: 拥有一个自己的QQ机器人难道不是一件很酷的事情吗//
 updated:
 cover:
-sticky: 10
 swiper_index: 10
 ---
 
