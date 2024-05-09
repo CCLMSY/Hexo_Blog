@@ -17,6 +17,10 @@ cover:
 swiper_index: 10
 ---
 
+# -1.望粥汁
+由于go-cqhttp已不再维护，插件于2024年2月下线noneBot商店，本教程第`5.2`步之后的方法已不再适用。
+具体替代方案请参考：https://github.com/Mrs4s/go-cqhttp/issues/2471
+
 # 0.序言
 1. 本教程主要面向**Windows系统**用户
 2. 教程从0开始全程详细指导，0基础萌新请放心食用🍕

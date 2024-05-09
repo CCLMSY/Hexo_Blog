@@ -128,6 +128,55 @@ void solve()
 }
 ```
 
+# D.数组成鸡
+**思维**
+## 题目大意
+给定一个长度为$n$的整数数组，每次操作可以使所有元素都$+1$或都$-1$。
+$Q$次询问，问任意次操作后能否使数组所有元素的乘积等于给定的数$M$（$-1e9\le M \le 1e9$）。
+## 解题思路
+询问的$M$范围不大，所以数组稍微长一点儿，就很可能溢出$1e9$的范围。
+
+由于元素都是整数，若数组中绝对值大于$1$的元素的个数超过$20$个，那么乘积的绝对值最小为$2^20$，超过$1e9$。
+
+枚举出现过的数字$x_i$，再向$x_i$两边枚举它附近的数字$t$，使全数组$-t$，然后直接计算数组的乘积进行$check$。
+当乘积的绝对值已经超过$1e9$，即出现最多$20$个绝对值大于$1$的元素时，直接判不合法，$check$枚举的元素个数是比较少的。
+若最终乘积的绝对值不大于$1e9$，则加入答案集合。
+
+询问时在答案中二分查找即可。
+
+## 参考程序
+```cpp
+void solve()
+{
+    ll n,Q,t;cin >> n >> Q;
+    vector<ll> a(n);
+    set<ll> ans; ans.insert(0);
+    set<ll> exi;
+    for(auto &x:a){
+        cin >> x;
+        exi.insert(x);
+    }
+    auto check = [&](ll x) -> bool{
+        ll tt=1;
+        for(auto &y:a){
+            tt*=y+x;
+            if(tt==0) return true;
+            if(abs(tt)>1e9) return false;
+        }ans.insert(tt);
+        return true;
+    };
+    for(auto &x:exi){
+        t=-x-1; while(check(t)) t--;
+        t=-x+1; while(check(t)) t++;
+    }
+    while(Q--){
+        cin >> t;
+        if(ans.count(t)) cout << "Yes\n";
+        else cout << "No\n";
+    }
+}
+```
+
 # E.本题又主要考察了贪心
 **DFS、诈骗**
 ## 题目大意
@@ -235,6 +284,51 @@ void solve()
 }
 ```
 
+# H.01背包，但是bit
+**位运算**
+## 题目大意
+有$n$个物品，第$i$个物品的价值为$v_i$，重量为$w_i$，每个物品只有一个。
+选定物品的重量之和定义为这些物品各自重量的“或”和，即$w=w_1|w_2|w_3|\cdots|w_c$；价值之和定义为这些物品各自重量的初等代数和：$v=\sum v_i$
+问选定物品的重量之和不超过$m$的情况下，价值之和的最大值
+## 解题思路
+或运算的性质：有$1$出$1$，全$0$出$0$。
+
+把所有“重量”看作二进制。
+
+假设选定物品后结果为$x$，那么$x$的每个$1bit$的位置，一定有某个被选中的物品的重量在该位上是$1bit$。
+
+枚举所有允许出现$1$的位置的所有情况。
+将$m$的某一$1bit$置$0$，则该位的低位可以任意取值，高位不变。
+如$m=1010000B$，将第二个$1bit$置$0$，则$1bit$的合法位置变为$1001111$。
+确定了$1bit$的合法位置，那每个物品只能是选或不选。
+遍历$m$的所有$1bit$，计算将其置$0$的情况：遍历所有物品，应选尽选。
+取所有情况的最大值。
+
+## 参考程序
+```cpp
+vector<ll> v,w;
+ll n,m,ans;
+void Update(ll x){
+    ll t=0;
+    FORLL(i,0,n-1)
+        if((w[i]&x)==w[i])
+            t+=v[i];
+    ans=max(ans,t);
+}
+void solve()
+{
+    cin >> n >> m; ans=0;
+    v.resize(n); w.resize(n);
+    FORLL(i,0,n-1) cin >> v[i] >> w[i];
+    FORLL(i,0,29) if(m&(1<<i)){
+        Update((m^(1<<i))|((1<<i)-1));
+        //m^(1<<i)：m的第i位置0
+        //(1<<i)-1：低i位全1
+    }Update(m);
+    cout << ans << endl;
+}
+```
+
 # I.It's bertrand paradox. Again!
 **概率论**
 ## 题目大意
@@ -275,13 +369,119 @@ void solve()
 }
 ```
 
+# J.又鸟之亦心
+**思维**
+## 题目大意
+两个人分别在数轴的$x,y$位置。
+接下来$n$天，第$i$天必须从两人中选择一人到$a_i$的位置。
+记这$n$天内两人最远的距离为$D$，决策使得$D$最小，求这个最小的$D$
+## 解题思路
+二分答案$D$，判断是否存在一种决策使得两人最远距离不超过$D$。
+
+忽略两人的身份，第$i$天一定有一个人的位置在$a_i$，记录另一个人可能的位置集合$s$。
+对于二分点，遍历每个$a_i$，更新$s$，使得$s$中的点与$a_i$的距离不超过$D$。
+如果$s$为空，说明不存在一种决策使得两人最远距离不超过$D$。
+
+## 参考程序
+```cpp
+const ll N = 200005;
+void solve()
+{
+    ll n,x,y;cin >> n >> x >> y;
+    create_vec(a,n);
+    auto check = [&](ll d) -> bool{
+        set<ll> s;
+        ll lst=y;
+        if(abs(x-y)>d) return false;
+        s.insert(x);
+        for(auto t:a){
+            if(s.empty()) return false;
+            if(abs(t-lst)<=d) s.insert(lst);
+            while(!s.empty()&&*s.begin()<t-d) s.erase(s.begin());
+            while(!s.empty()&&*s.rbegin()>t+d) s.erase(*s.rbegin());
+            lst=t;
+        }return !s.empty();
+    };
+    ll l=0,r=1e9;
+    while(l<r){
+        ll mid=(l+r)/2;
+        if(check(mid)) r=mid;
+        else l=mid+1;
+    }cout << l << endl;
+}
+```
+
+# K.牛镇公务员考试
+**图论**
+## 题目大意
+有$n$道题，每道题的题目为：“第$a_i$题的答案是（）？”
+每题有`A B C D E`五个选项，选项的内容是字符串`ABCDE`的一个排列，记为字符串$s_i$
+例如第$i$题的题目为：
+
+第$a_i$题的答案是（）？
+A. $s_i[0]$ B. $s_i[1]$ C. $s_i[2]$ D. $s_i[3]$ E. $s_i[4]$
+
+求答对所有题目的方案数
+
+## 解题思路
+将题目看作节点。
+第$i$道题决定了第$a_i$道题的答案，视为一条从$i$到$a_i$的有向边。
+同时，每个节点的出度为$1$，这意味着每个连通分量都是一个内向基环树。
+（内向基环树：每个节点的出度为$1$的弱连通图）
+
+反过来看，一旦确定了第$a_i$道题的答案，第$i$道题的答案也就确定了。
+因此对于一条链，只要确定了一个节点的答案，整条链的答案也就唯一确定了。
+显然在内向基环树中，链一定是挂在某个环上，链的答案随环的选择而唯一确定，因此可以忽略链。
+
+对于环，先确定一个节点的答案（5种），然后递推确定整个环的答案，判断是否合法。
+每个环的方案数在$0-4$之间
+
+最终答案为每个连通分量方案数的乘积
+
+## 参考程序
+```cpp
+void solve()
+{
+    ll n;cin >> n ;
+    vector<ll> a(n);
+    vector<string> s(n);
+    FORLL(i,0,n-1){
+        cin >> a[i] >> s[i];
+        a[i]--;
+    }
+    ll ans=1;
+    vector<int> vis(n,-1);
+    FORLL(i,0,n-1){
+        ll j=i;
+        while(vis[j]==-1){
+            vis[j]=i;
+            j=a[j];
+        }
+        if(vis[j]!=i) continue;
+        vector<ll> cycle;//环
+        ll k=j;
+        do{
+            cycle.push_back(k);
+            k=a[k];
+        }while(k!=j);
+        ll res=0,t;
+        FORLL(i,0,4){
+            t=i;
+            for(auto x:cycle) t=s[x][t]-'A';
+            if(t==i) res++;
+        }
+        multo(ans,res);
+    }cout << ans << endl;
+}
+```
+
 # L.要有光
 **诈骗题**
 ## 题目大意
 给了一些几何形状的方程，求在**地面**（$z=0$）上的最大阴影面积
 
 ## 解题思路
-题目拐弯抹角。
+题目拐弯抹角吓唬人///
 保证符合题意的状态是光源处于$xOy$平面上($z=0$)。
 目的是求一个$xOy$平面上的梯形阴影的面积。
 上底长$2w$，下底长$4w$，高为$c$，面积为$3wc$。

@@ -1,3 +1,16 @@
+- class_name: 友人帐✨
+  class_desc: 相遇即是缘分——
+  link_list: 
+    - name: lx_tyin
+      link: http://lxtyin.ac.cn/
+      avatar: http://source.cclmsy.cc/Images/Flinks/Avatars/lxtyin.png
+      descr: Run Execllent
+      siteshot: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/http://lxtyin.ac.cn/
+    - name: DODOLA
+      link: https://dodolalorc.cn/
+      avatar: https://dodolalorc.cn/img/dodola.png
+      descr: ⭐️INTJ/Acmer/前端/二次元⭐️
+      siteshot: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://dodolalorc.cn/
 - class_name: 鸣谢🍔
   class_desc: 本网站的搭建得益于以下开源作者
   link_list: 
@@ -26,16 +39,3 @@
       avatar: https://img01.anheyu.com/useruploads/90/2023/04/23/6444e85234e51.jpg
       descr: 生活明朗，万物可爱✨
       siteshot: https://source.fomal.cc/siteshot/anzhiy.cn.jpg
-- class_name: 友人帐✨
-  class_desc: 相遇即是缘分——
-  link_list: 
-    - name: lx_tyin
-      link: http://lxtyin.ac.cn/
-      avatar: http://source.cclmsy.cc/Images/Flinks/Avatars/lxtyin.png
-      descr: Run Execllent
-      siteshot: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/http://lxtyin.ac.cn/
-    - name: DODOLA
-      link: https://dodolalorc.cn/
-      avatar: https://dodolalorc.cn/img/dodola.png
-      descr: ⭐️INTJ/Acmer/前端/二次元⭐️
-      siteshot: https://image.thum.io/get/allowJPG/wait/20/width/600/crop/950/https://dodolalorc.cn/

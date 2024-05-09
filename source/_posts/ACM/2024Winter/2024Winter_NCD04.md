@@ -5,7 +5,7 @@ tags:
 categories: 算法竞赛
 mathjax: true
 abbrlink: 19d9688c
-date: 2024/2/7
+date: 2024/2/19
 description: 题解|2024牛客寒假04
 ---
 # A.柠檬可乐
