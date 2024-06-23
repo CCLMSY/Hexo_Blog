@@ -6,7 +6,7 @@ categories: 学习笔记
 mathjax: true
 abbrlink: 6b396687
 date: 2024-01-16 4:55:00
-description: 考前1晚从0开始女娲补天的数据库复习(×)预习(√)笔记
+description: 一个晚上，从0开始的女娲补天
 ---
 # 数据库原理
 ## 一、概述（理解、记忆）

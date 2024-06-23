@@ -1,5 +1,13 @@
 ---
-abbrlink: '0'
+title: 《计算机组成原理》期末复习笔记
+tags:
+  - 笔记
+categories: 学习笔记
+mathjax: true
+abbrlink: e0a00df5
+date: 2024-06-16 02:55:00
+swiper_index:
+description:
 ---
 # 计算机组成原理
 ## 一、计算机系统概论
@@ -50,9 +58,9 @@ abbrlink: '0'
 
 #### 1.2.2 计算机的硬件框图
 改进：以存储器为核心
-![冯·诺依曼计算机结构VS以存储器为中心的体系结构](http://source.cclmsy.cc/Images/Posts/POCC/PoCC02.png)
+![冯·诺依曼计算机结构VS以存储器为中心的体系结构](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC02.png)
 （实线：数据传输；虚线：指令传输）
-![冯·诺依曼体系结构VS哈弗体系结构](http://source.cclmsy.cc/Images/Posts/POCC/PoCC01.png)
+![冯·诺依曼体系结构VS哈弗体系结构](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC01.png)
 
 ### 1.3 计算机硬件的主要技术指标
 #### 1.3.1 字长
@@ -116,23 +124,23 @@ abbrlink: '0'
 3. 典型事务操作：请求、仲裁、地址传输、数据传输、总线释放
 
 #### 3.4.2 单总线结构
-![](http://source.cclmsy.cc/Images/Posts/POCC/PoCC25.png)
+![](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC25.png)
 - 结构简单、使用方便、易扩充
 - 统一编址、简化指令系统、存储空间减少
 - 共享总线、分时使用、通讯速度慢
 - 高速设备的高速性能得不到发挥
 
 #### 3.4.3 双总线结构1：增加CPU-主存的存储总线
-![](http://source.cclmsy.cc/Images/Posts/POCC/PoCC26.png)
+![](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC26.png)
 - 存储总线有效的降低了系统总线的负载，提高了并行性能
 - 需要增加专门的I/O指令，存储空间增加
 - 结构简单、易扩充
 
 #### 3.4.4 双总线结构2：增加I/O总线
-![](http://source.cclmsy.cc/Images/Posts/POCC/PoCC27.png)
+![](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC27.png)
 
 #### 3.4.5 三总线结构
-![](http://source.cclmsy.cc/Images/Posts/POCC/PoCC28.png)
+![](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC28.png)
 
 - 高速与低速传输活动分离
   - I/O设备与主存之间的通信和CPU活动分离
@@ -145,7 +153,7 @@ abbrlink: '0'
 - 吞吐率：三总线系统比单总线系统大得多
   
 #### 3.4.7 采用南北桥结构的奔腾机系统总线结构
-![南北桥结构](http://source.cclmsy.cc/Images/Posts/POCC/PoCC29.png)
+![南北桥结构](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC29.png)
 - 北桥靠近CPU，连接高速设备：主存、图形设备、CPU
 - 南桥连接低速设备：I/O设备、硬盘、USB、网卡
 - 南北桥之间通过PCI总线连接
@@ -273,7 +281,7 @@ $$
   - 容量：小 -> 大
   - 价格：贵 -> 便宜
 3. 存储器的层次结构的作用
-  - ![存储器的层次结构](http://source.cclmsy.cc/Images/Posts/POCC/PoCC03.png)
+  - ![存储器的层次结构](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC03.png)
   - 缓存-主存层次：解决CPU与主存之间速度不匹配的问题
     - 透明：对系统程序员和应用程序员屏蔽
     - 主存储器、实地址、物理地址
@@ -285,7 +293,7 @@ $$
 ### 4.2 主存储器
 #### 4.2.1 概述
 1. 主存的基本组成
-   - ![](http://source.cclmsy.cc/Images/Posts/POCC/PoCC05.png)
+   - ![](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC05.png)
    - 存储体：存储数据
    - MAR：存储器地址寄存器，保存要访问的存储单元地址
      - 经过译码器进行译码，选定存储单元
@@ -310,7 +318,7 @@ $$
 
 #### 4.2.2 半导体存储芯片
 1. 基本结构与芯片容量
-   - ![半导体存储芯片](http://source.cclmsy.cc/Images/Posts/POCC/PoCC13.png)
+   - ![半导体存储芯片](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC13.png)
    - 例：地址线10位；数据线8位
    - 存储单元：$2^{10}$个；存储字长：8位；芯片容量：$2^{10}\times 8=1K*8位=8Kbit=1KB$
    - 片选线CS/CE：选择芯片Chip Select/Enable
@@ -318,18 +326,18 @@ $$
 2. 译码驱动方式
    - 单译码结构：$n$位地址输入，经$n$位译码器译码，指向$2^n$个存储单元
    - 双译码结构：将存储芯片阵列，分为行译码和列译码，指向$2^{2n}$个存储单元
-     - ![静态存储器芯片结构](http://source.cclmsy.cc/Images/Posts/POCC/PoCC04.png)
+     - ![静态存储器芯片结构](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC04.png)
      - 地址译码器：将二进制地址译码为存储单元的物理地址（类比3-8线译码器）
      - Y向驱动器：将地址译码后的列地址送到存储矩阵的列选择线
 #### 4.2.3 随机存取存储器（RAM）
 1. SRAM（静态RAM）
    1. 存储原理：触发器
-      - ![SRAM存储单元](http://source.cclmsy.cc/Images/Posts/POCC/PoCC06.png)
+      - ![SRAM存储单元](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC06.png)
       - 中心与GND相连的T1, T2：存储数据
       - 中心与VCC相连的T3, T4：补充电荷
       - 外侧的T5-T8：T5、T6行选，T7、T8列选
    2. SRAM芯片（以Intel 2114为例）
-      - ![SRAM芯片](http://source.cclmsy.cc/Images/Posts/POCC/PoCC14.png) 
+      - ![SRAM芯片](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC14.png) 
       - 地址线：$A_{9-0}$，地址数=$2^{10}$个
       - 数据线：$I/O_{3-0}$，数据位数=$4$位
       - 芯片存储容量=$2^{10}\times 4bit=1K\times 4bit$
@@ -378,15 +386,15 @@ PROM：Programmable（可编程）
 EPROM：Erasable P（可擦写可编程）
 EEPROM：Electrically-Erasable P（电可擦写可编程）
 Flash Memory：闪速存储器
-#### 4.2.5 主存与CPU的连接方式
-- ![主存与CPU的连接方式](http://source.cclmsy.cc/Images/Posts/POCC/PoCC07.png)
+#### 4.2.5 主存与CPU的连接方式（不考察）
+- ![主存与CPU的连接方式](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC07.png)
 - $MREQ(存储器请求)\Rightarrow CS(片选线)$
 - $A_{17-0}(地址线)\Rightarrow A$：存储单元数=$2^{18-10} K$个
 - $R/W(读写控制)\Rightarrow WE(写使能)$
 - $D_{31-0}(数据线)\Rightarrow D$：数据位数=$32$位
-#### 4.2.6 存储器容量扩展
+#### 4.2.6 存储器容量扩展（不考察）
 - 位扩展（DBUS）：增加存储字长
-  - ![位扩展](http://source.cclmsy.cc/Images/Posts/POCC/PoCC08.png)
+  - ![位扩展](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC08.png)
   - 方法：
     - MREQ、A同时连接$n$个芯片
     - R/W同时连接所有RAM芯片
@@ -395,7 +403,7 @@ Flash Memory：闪速存储器
     - 从每个芯片内部相同的地址单元中读取数据，同时读写
     - 位扩展后的存储容量=单元数×（字长×片数）
 - 字扩展（ABUS）：增加存储单元数
-  - ![字扩展](http://source.cclmsy.cc/Images/Posts/POCC/PoCC09.png)
+  - ![字扩展](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC09.png)
   - 方法：
     - D同时连接$n$个芯片
     - R/W同时连接所有RAM芯片
@@ -406,7 +414,7 @@ Flash Memory：闪速存储器
     - 从单个芯片（组）中的地址单元中读取数据
     - 字扩展后的存储容量=（单元数×片数）×字长
 - 字位综合扩展：同时增加存储单元数和存储字长
-  - ![字位扩展](http://source.cclmsy.cc/Images/Posts/POCC/PoCC10.png)
+  - ![字位扩展](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC10.png)
   - 方法：
     - R/W同时连接所有RAM芯片组
     - D位数扩展到原来的$n$倍，连接每个芯片组
@@ -420,7 +428,7 @@ Flash Memory：闪速存储器
     - 0x6000到0xFFFF为RAM地址区域
     - RAM的控制信号为CS#和WE#，CPU地址线A15~A0，数据线D7~D0，控制信号有读写控制R/W#和访存请求MREQ#
   - 材料：16K×8 ROM 4K×8 RAM
-  - ![存储器容量扩展](http://source.cclmsy.cc/Images/Posts/POCC/PoCC11.png)
+  - ![存储器容量扩展](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC11.png)
   - 注意：
     - 译码器一位信号对应两片芯片时，高位地址（$A_{12}$）参与片选
     - 译码器两位信号对应一片芯片时，信号取或传入片选
@@ -447,7 +455,7 @@ Flash Memory：闪速存储器
       - 流水线方式存储的条件：$T=m\tau$
       - 连续传输n个字的时间：$T+(n-1)\tau$
     - 存储体数量：不小于$\dfrac{存储周期}{总线传输周期}$
-  - ![多模块存储器](http://source.cclmsy.cc/Images/Posts/POCC/PoCC12.png)
+  - ![多模块存储器](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC12.png)
 
 |                       | 高位交叉             | 低位交叉             |
 | --------------------- | -------------------- | -------------------- |
@@ -482,7 +490,7 @@ Flash Memory：闪速存储器
 5. 关键技术
   - 数据查找、地址映射、替换策略、写入策略
 6. Cache的读操作
-  - ![Cache的读操作](http://source.cclmsy.cc/Images/Posts/POCC/PoCC15.png)
+  - ![Cache的读操作](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC15.png)
 7. Cache的写操作
   - 写穿法（Write Through）：写Cache同时写主存
     - 优点：维持了主存和Cache的数据一致性
@@ -496,15 +504,15 @@ Flash Memory：闪速存储器
 
 #### 4.3.2 Cache-主存地址映射
 1. 直接映射
-  - ![直接映射](http://source.cclmsy.cc/Images/Posts/POCC/PoCC16.png)
+  - ![直接映射](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC16.png)
   - 根据Cache块数对主存块号取模，只能存放在对应模数的位置
   - 主存地址n位=t位标记位+c位Cache块号+b位块内地址（t+c=m）
 2. 全相联映射（主存容量大考虑采用）
-  - ![全相联映射](http://source.cclmsy.cc/Images/Posts/POCC/PoCC17.png)
+  - ![全相联映射](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC17.png)
   - 任意主存块可以存放在任意Cache块中
   - 主存地址n位=m位标记位+b位块内地址
 3. 组相联映射
-  - ![组相联映射](http://source.cclmsy.cc/Images/Posts/POCC/PoCC18.png)
+  - ![组相联映射](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC18.png)
   - 组间直接映射，组内全相联映射，先分组
   - 组数$2^q$，组内Cache块数$2^r$，$q+r=c$
   - 主存地址n位=(t+r)位标记位+q(c-r)位组号+b位块内地址
@@ -798,7 +806,7 @@ $$
 1. 表示格式
    - $N=S\times r^j$
    - S：尾数（小数）；r：基数($2^k$)；j：阶码（二进制表示）
-   - ![浮点数表示](http://source.cclmsy.cc/Images/Posts/POCC/PoCC19.png)
+   - ![浮点数表示](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC19.png)
    - $S_f$：浮点数的符号
    - $n$：决定浮点数的精度
    - $m$：决定浮点数的表示范围
@@ -808,7 +816,7 @@ $$
    - 特别的，$r=2$时，S=0.1xxxxxx
    - 尾数左右移动$k$位，阶码变化$1$
 3. 表示范围
-   - ![浮点数表示范围](http://source.cclmsy.cc/Images/Posts/POCC/PoCC20.png)
+   - ![浮点数表示范围](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC20.png)
    - 尾数$S$：$0,[2^{-n},1-2^{-n}]$
    - 阶码$j$：$[-2^m+1,2^m-1]$
    - 表示范围：$[-(1-2^{-n})\times 2^{2^m-1},-(2^{-n})\times 2^{-2^m+1}],0,[2^{-n}\times 2^{-2^m+1},(1-2^{-n})\times 2^{2^m-1}]$
@@ -853,7 +861,7 @@ $$
    4. 真实溢出：正正得负/负负得正
 2. 硬件实现
    1. 串行加法器：逐位相加，进位传递
-      1. ![串行加法器](http://source.cclmsy.cc/Images/Posts/POCC/PoCC21.png)
+      1. ![串行加法器](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC21.png)
       2. 缺点：高位依赖低位，速度慢
       3. $S_i=X_i\oplus Y_i\oplus C_{i-1}$
       4. $C_i=X_iY_i+X_iC_{i-1}+Y_iC_{i-1}=X_iY_i+(X_i\oplus Y_i)C_{i-1}$
@@ -873,11 +881,11 @@ $$
             - $C_4 = G_4^* + P_4^*C_0$：组进位传递函数
          5. $S_i=P_i\oplus C_{i-1}$ 
       2. 1级门电路延迟-与门异或门电路：计算$G_i,P_i$
-         - ![1级门电路](http://source.cclmsy.cc/Images/Posts/POCC/PoCC22.png) 
+         - ![1级门电路](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC22.png) 
       3. 2级门电路延迟-先行进位电路：计算$C_i$
-         - ![2级门电路](http://source.cclmsy.cc/Images/Posts/POCC/PoCC23.png) 
+         - ![2级门电路](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC23.png) 
       4. 四位快速加法器
-         - ![四位快速加法器](http://source.cclmsy.cc/Images/Posts/POCC/PoCC24.png)
+         - ![四位快速加法器](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC24.png)
 
 ### 6.3.3 乘法运算
 - 思想：移位相加
@@ -885,7 +893,7 @@ $$
 - 符号位：单独计算
 - 数值位：从$Y$的最低位开始，逐位决定$SUM$是否加$X$，然后$Sum$右移一位。
 
-![原码乘法](http://source.cclmsy.cc/Images/Posts/POCC/PoCC30.png)
+![原码乘法](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC30.png)
 
 #### 6.3.3.2 （重点）补码乘法：Booth算法
 - 给定：$[X]_{补},[Y]_{补}$，求$[X]_{补}\times [Y]_{补}$
@@ -900,7 +908,7 @@ $$
 3. 右移$SUM$，左边补符号位
 4. 去掉$Y$的最低位，重复步骤2-3，直到$Y$只剩1位
 
-![补码乘法](http://source.cclmsy.cc/Images/Posts/POCC/PoCC31.png)
+![补码乘法](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC31.png)
 
 ### 6.3.4 除法运算
 #### 6.3.4.1 恢复余数法
@@ -913,7 +921,7 @@ $$
 6. 重复步骤2-5，直到$X$左移$4$位（$Y$的位数）
 7. 当前的余数为$X\times 2^{-4}$
 
-![恢复余数法](http://source.cclmsy.cc/Images/Posts/POCC/PoCC32.png)
+![恢复余数法](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC32.png)
 
 #### 6.3.4.2 (重点)非恢复余数法/加减交替法
 - 给定：$[X]_{补},[Y]_{补}$，求$[X]_{补}\div [Y]_{补}$（$X,Y$为正数）
@@ -926,7 +934,7 @@ $$
 7. 重复步骤2-6，直到$X$左移$4$位（$Y$的位数）
 8. 当前的余数为$X\times 2^{-4}$
 
-![非恢复余数法](http://source.cclmsy.cc/Images/Posts/POCC/PoCC33.png)
+![非恢复余数法](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC33.png)
 
 ## 6.4 浮点运算
 [规格化浮点数](#62-小数的浮点表示原码表示)
@@ -1124,7 +1132,7 @@ $操作码OP|(寻址模式Mode)|地址码A_1|地址码A_2|\cdots$
    3. 执行周期：执行指令，存取操作数和结果的时间
    4. 中断周期：CPU采用中断方式实现主机和I/O设备的通信时，发送中断信号的时间
 
-![指令周期](http://source.cclmsy.cc/Images/Posts/POCC/PoCC34.png)
+![指令周期](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC34.png)
 
 - 提高机器速度的方法
   1. 提高访存速度：高速芯片、Cache、多体并行
@@ -1162,7 +1170,7 @@ $操作码OP|(寻址模式Mode)|地址码A_1|地址码A_2|\cdots$
 - 机器周期=CPU周期：从主存读出一条指令的**最短时间**
 - 指令周期：从主存取一条指令到执行完毕的时间
   
-![时序](http://source.cclmsy.cc/Images/Posts/POCC/PoCC35.png)
+![时序](https://source.cclmsy.cc/Images/Posts/PoCC/PoCC35.png)
 
 ## 8.5 控制器设计
 ||硬布线控制器|微程序控制器|
