@@ -10,7 +10,7 @@ tags:
   - 背包DP
   - 笔记
 swiper_index: 2
-abbrlink: 879e7329
+abbrlink: Model_DP_Bag
 ---
 
 # 1.01背包

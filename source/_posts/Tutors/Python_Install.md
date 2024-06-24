@@ -4,7 +4,7 @@ date: '2023/10/5 17:00'
 categories: 教程
 keywords: Python
 description: 安装Python、配置Python环境（附安装包）
-abbrlink: c34e2ac0
+abbrlink: Tutor_Python_Install
 tags:
   - Python
   - 教程

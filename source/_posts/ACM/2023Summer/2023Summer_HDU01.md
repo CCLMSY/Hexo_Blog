@@ -10,7 +10,7 @@ top_img: false
 comments: true
 cover:
 toc: true
-abbrlink: aa756bab
+abbrlink: ACM_2023Summer_HDU01
 description: 题解|2023暑期杭电多校01
 toc_number:
 toc_style_simple:

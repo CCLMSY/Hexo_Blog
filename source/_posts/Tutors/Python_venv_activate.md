@@ -3,7 +3,7 @@ title: 教程|Windows系统无法激活Python虚拟环境的解决方案
 date: '2023/10/5 21:00'
 categories: 教程
 keywords: Python
-abbrlink: 28dedfa6
+abbrlink: Tutor_Python_venv_activate
 tags:
   - Python
   - 教程

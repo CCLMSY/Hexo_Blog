@@ -4,7 +4,7 @@ tags:
   - 2024牛客寒假
 categories: 算法竞赛
 mathjax: true
-abbrlink: f7d709a0
+abbrlink: ACM_2024Winter_NCD06
 date: 2024/2/23
 description: 题解|2024牛客寒假06
 ---

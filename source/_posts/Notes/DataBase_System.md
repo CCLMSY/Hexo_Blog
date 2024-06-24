@@ -1,12 +1,12 @@
 ---
-title: 《数据库原理》期末复习笔记
+title: 《数据库原理》笔记
 tags:
   - 笔记
 categories: 学习笔记
 mathjax: true
-abbrlink: 6b396687
+abbrlink: Note_Database_System
 date: 2024-01-16 4:55:00
-description: 
+description: 《数据库原理》笔记
 ---
 # 一、概述（理解、记忆）
 ## 1.2. 基本知识

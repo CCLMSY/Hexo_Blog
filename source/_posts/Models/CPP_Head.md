@@ -7,7 +7,7 @@ keywords: 宏定义
 description: CCの算法竞赛宏&模板
 tags:
   - 模板
-abbrlink: 46b4cb99
+abbrlink: Model_CPP_Head
 sticky:
 swiper_index:
 ---

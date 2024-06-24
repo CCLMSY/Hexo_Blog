@@ -6,7 +6,7 @@ keywords:
   - Python
   - 机器人
   - 教程
-abbrlink: 11f0411
+abbrlink: Tutor_BOT_Deployment
 tags:
   - Python
   - 机器人

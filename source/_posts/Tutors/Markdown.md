@@ -7,7 +7,7 @@ tags:
   - 外挂标签
 categories:
   - 文档
-abbrlink: 2013454d
+abbrlink: Tutor_Markdown
 sticky: #置顶，数值越大越靠前
 swiper_index: #轮播图排序，数值越大越靠前
 date: 2022-08-09 18:19:03

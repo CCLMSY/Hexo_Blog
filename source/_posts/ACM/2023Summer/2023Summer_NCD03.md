@@ -10,7 +10,7 @@ top_img: false
 comments: true
 cover:
 toc: true
-abbrlink: 60ea0959
+abbrlink: ACM_2023Summer_NCD03
 description: 题解|2023暑期牛客多校03
 toc_number:
 toc_style_simple:

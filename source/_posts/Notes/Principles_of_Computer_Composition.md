@@ -1,13 +1,13 @@
 ---
-title: 《计算机组成原理》期末复习笔记
+title: 《计算机组成原理》笔记
 tags:
   - 笔记
 categories: 学习笔记
 mathjax: true
-abbrlink: e0a00df5
+abbrlink: Note_Principle_of_Computer
 date: 2024-06-16 02:55:00
 swiper_index:
-description: 
+description: 一门教你手搓计算机的奇妙学科
 ---
 # 一、计算机系统概论
 ## 1.1 计算机系统简介
