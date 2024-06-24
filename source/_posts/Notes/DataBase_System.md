@@ -30,8 +30,6 @@ description: 《数据库原理》笔记
 - 组织、存储和管理数据
 - 数据库的建立和维护
 
-<div style="page-break-after: always;"></div>
-
 ### 5. 数据库系统（DBS）的结构
 - 硬件：计算机硬件和数据库专用硬件
 - 软件：操作系统（OS）、数据库管理系统（DBMS）（核心）、开发工具（数据库专用工具、程序设计语言）和应用系统
@@ -70,8 +68,6 @@ description: 《数据库原理》笔记
 - 联系：实体集之间或内部的关联。类型：一对一、一对多、多对多
 - 元/度：表中属性的个数
 
-<div style="page-break-after: always;"></div>
-
 ### 4. 逻辑模型
 - 定义：概念模型的DBMS表示
 - 分类：层次模型、网状模型、**关系模型**、面向对象模型等
@@ -82,7 +78,6 @@ description: 《数据库原理》笔记
 4. 关系数据库：支持关系模型的数据库
 5. 关系模式的数学表达：
 $R(U,F),U=\{A_1,A_2,\cdots,A_n\},F=\{A_i\rightarrow A_j,\cdots\}$
-
 
 ## 1.4. 数据库系统结构
 ### 1. 数据库系统的模式结构
@@ -114,8 +109,6 @@ $R(U,F),U=\{A_1,A_2,\cdots,A_n\},F=\{A_i\rightarrow A_j,\cdots\}$
 2. B/S结构：浏览器/服务器结构
 
 外部网络（表示层）$\Leftrightarrow$ 应用服务器（处理层）$\Leftrightarrow$ 内部网络（数据层）
-
-<div style="page-break-after: always;"></div>
 
 # 二、关系运算
 ## 2.1. 关系数据语言
@@ -151,8 +144,6 @@ $R(U,F),U=\{A_1,A_2,\cdots,A_n\},F=\{A_i\rightarrow A_j,\cdots\}$
 
 查询满足多重条件的元组（如同时提供A和B的供应商）：
 $\pi_{SNO}(S\Join\sigma_{PNAME=A} \(P\))\cap\pi_{SNO}(S\Join\sigma_{PNAME=B} \(P\))$
-
-<div style="page-break-after: always;"></div>
 
 # 三、数据完整性
 数据完整性是指：数据的正确性、相容性和一致性
@@ -197,8 +188,6 @@ $\pi_{SNO}(S\Join\sigma_{PNAME=A} \(P\))\cap\pi_{SNO}(S\Join\sigma_{PNAME=B} \(P
 - 相关功能：控制数据库的安全性、完整性、并发性和恢复性
 - 关键词：Grant、Revoke、Deny、Check
 
-<div style="page-break-after: always;"></div>
-
 # 四（一）、数据定义语言（DDL）与完整性约束实现
 ## 3.1. 数据定义语言（DDL）
 - 操作：创建Create、修改ALTER、删除DROP
@@ -240,8 +229,6 @@ Create Table SyT<表名>
 )
 ```
 
-<div style="page-break-after: always;"></div>
-
 ### 4. 修改表（修改表的结构，属于DDL）
 ```sql
 Use EBook
@@ -267,8 +254,6 @@ Drop Table SyT
 - 字符型：char(n)
 - 日期型：date
 - 图片型：image
-
-<div style="page-break-after: always;"></div>
 
 ## 3.3. 完整性约束实现
 ### 1. 实体完整性（主键）
@@ -316,8 +301,6 @@ Alter Table SyT
     Drop Constraint DF_No
 ```
 
-<div style="page-break-after: always;"></div>
-
 # 四（二）、数据操纵语言（DML）与数据查询
 ## 4.1. 数据操纵语言（DML）
 - 操作：增Insert、删Delete、改Update、查Select
@@ -346,8 +329,6 @@ Update SyT Set Name='王五' [Where No=2<条件>]
 -- 不加条件，修改所有记录
 ```
 
-<div style="page-break-after: always;"></div>
-
 ## 4.5. 查询记录
 ```sql
 Use EBook
@@ -375,8 +356,6 @@ From SyT [Join CCT On(SyT.A=CCT.B)] --连接
     - Min：`Select Min(No) From SyT`
 7. 嵌套查询：`Select … From SyT Where No In(Select No From CCT Where …)`
 8. Having子句：`Select … From SyT Group By HNo Having Count(*)>1`，筛选满足特定条件的分组
-
-<div style="page-break-after: always;"></div>
 
 # 专：SQL例题
 ## 1. 创建数据库
@@ -437,8 +416,6 @@ Insert Into SyT Values(2,'孙七','Sy0005',25)
 2. 统计`SyT`表中名为`张三`的学生的人数。
 3. 查询名字在`CCT`表中出现且在`SyT`表中未出现的学生的序号、姓名、编码。
 
-<div style="page-break-after: always;"></div>
-
 # 五、概念模型和逻辑模型
 ## 5.1. 概念模型（E-R图）
 1.实体：方框
@@ -468,8 +445,6 @@ Insert Into SyT Values(2,'孙七','Sy0005',25)
 工作（工号（主键、外键）、仓库号（主键、外键）、合同）
 领导（工号（主键、外键）、工号（主键、外键）、职补）
 ```
-
-<div style="page-break-after: always;"></div>
 
 # 六、关系规范化
 ## 6.1. 函数依赖
@@ -543,8 +518,6 @@ Insert Into SyT Values(2,'孙七','Sy0005',25)
 ### 5. 数据加密
 常用的加密方法：替换方法、置换方法和混合方法等。
 
-<div style="page-break-after: always;"></div>
-
 # 八、并发控制
 ## 8.1. 事务
 - 用户定义的一个数据操作序列，这些操作可作为一个完整的工作单元，要么全部执行，要么全部不执行，是一个不可分割的工作单位。
@@ -572,7 +545,6 @@ T1加S锁，T2加X锁（解决丢失修改、不可重复读和读脏数据）
 
 ## 8.5. 两段锁协议和可串行化
 满足两段锁协议一定可串行化，不满足两段锁协议也可能可串行化。
-
 
 ## 8.6. 封锁粒度
 粒度越细，软件复杂性和系统开销也就越小

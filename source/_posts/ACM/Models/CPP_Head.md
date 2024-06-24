@@ -1,10 +1,10 @@
 ---
-title: CCの算法竞赛宏定义
+title: SYの算法竞赛宏定义
 date: '2023/1/30 20:00'
 updated: 2023/10/4 12：00
 categories: 代码/模板
 keywords: 宏定义
-description: CCの算法竞赛宏&模板
+description: SYの算法竞赛宏&模板
 tags:
   - 模板
 abbrlink: Model_CPP_Head

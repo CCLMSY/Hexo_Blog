@@ -29,8 +29,6 @@ $P(A\cup B\cup C)$ $=P(A)+P(B)+P\(C\)-P(AB)-P(AC)-P(BC)+P(ABC)$ $=3P(A)-3P(A)^2+
 1. 概述：$n+m$件产品中有$m$件次品，从中抽取$k$件，求其中有$i$件次品的概率
 2. 分布律：$P(X=i)=\frac{C_m^iC_{n}^{k-i}}{C_{m+n}^k}$
 
-<div STYLE="page-break-after: always;"></div>
-
 # 二、随机变量及其分布+数字特征
 ## 1. $X$ ~ $B(n,p)$
 1. 分布名称：二项分布
@@ -61,8 +59,6 @@ $P(A\cup B\cup C)$ $=P(A)+P(B)+P\(C\)-P(AB)-P(AC)-P(BC)+P(ABC)$ $=3P(A)-3P(A)^2+
 3. 概率密度函数：$f(x)=\begin{cases}\frac{1}{b-a}&,a\leq x\leq b \\\\ 0&,\text{其他}\end{cases}$
 4. 期望：$E(X)=\frac{a+b}{2}$
 5. 方差：$D(X)=\frac{(b-a)^2}{12}$
-
-<div STYLE="page-break-after: always;"></div>
 
 ## 5. $X$ ~ $E(\lambda)$
 1. 分布名称：指数分布
@@ -99,8 +95,6 @@ $P(A\cup B\cup C)$ $=P(A)+P(B)+P\(C\)-P(AB)-P(AC)-P(BC)+P(ABC)$ $=3P(A)-3P(A)^2+
 9. $3\mu$原则：$P(|X-\mu|<k\sigma),k=1,2,3$分别对应$0.683,0.954,0.997$
 10. 正态分布标准化：$X$ ~ $N(\mu,\sigma^2)$，$Z=\frac{X-\mu}{\sigma}$ ~ $N(0,1)$
 
-<div STYLE="page-break-after: always;"></div>
-
 # 三、多维随机变量及其分布
 ## 1. 二维随机分布函数的充要条件(3)
 1. 右连续：$F(x+0,y)=F(x,y)$
@@ -130,8 +124,6 @@ $P(A\cup B\cup C)$ $=P(A)+P(B)+P\(C\)-P(AB)-P(AC)-P(BC)+P(ABC)$ $=3P(A)-3P(A)^2+
 1. $F_{max}(x)=P(X_1\leq x,X_2\leq x,\cdots,X_n\leq x)$ $=\prod F(x_i)$
 2. $F_{min}(x)=P(X_1\leq x,X_2\leq x,\cdots,X_n\leq x)$ $=1-\prod (1-F(x_i))$
 
-<div STYLE="page-break-after: always;"></div>
-
 ### 例题：已知$\mathbb{X}=(X_1,X_2,\cdots,X_n)$独立同分布，且服从于$U(0,\theta)$，求$\max(\mathbb{X})$、$\min(\mathbb{X})$的密度函数$f_M(x)$、$f_N(x)$。
 $X_i$ ~ $U(0,\theta)$ $\Rightarrow$ $F(x)=\begin{cases}0&,x<0 \\\\ \frac{x}{\theta}&,0\leq x\leq \theta \\\\ 1&,x>\theta\end{cases}$
 
@@ -142,8 +134,6 @@ $\Rightarrow$ $f_M(x)=\frac{dF_M(x)}{dx}=\begin{cases}\frac{nx^{n-1}}{\theta^n}&
 $F_N(x)=1-F_M(x)=\begin{cases}1&,x<0 \\\\ 1-\left(\frac{x}{\theta}\right)^n&,0\leq x\leq \theta \\\\ 0&,x>\theta\end{cases}$
 
 $\Rightarrow$ $f_N(x)=\frac{dF_N(x)}{dx}=\begin{cases}\frac{nx^{n-1}}{\theta^n}&,0\leq x\leq \theta \\\\ 0&,Otherwise\end{cases}$
-
-<div STYLE="page-break-after: always;"></div>
 
 # 专：随机变量函数的分布
 ## 1. 离散型随机变量
@@ -169,8 +159,6 @@ $\Rightarrow$ $F_Y(y)=\begin{cases}0&,y<0 \\\\ 2\varPhi(\sqrt{y})-1&,y\geq 0\end
 第4步：对$F_Y(y)$求导，得$f_Y(y)$
 
 $f_Y(y)=\frac{dF_Y(y)}{dy}=\begin{cases}0&,y<0 \\\\ y^{-\frac{1}{2}}\varphi(\sqrt{y})&,y\geq 0\end{cases}$
-
-<div STYLE="page-break-after: always;"></div>
 
 ### 二维例题：$X$ ~ $E(1)$ , $Y$ ~ $U(0,1)$ , $X,Y$独立 , $Z=X+2Y$，求$f_Z(z)$
 第1步：写$X,Y$的取值范围，确认$f_Z(z)$的定义域，定义域外$f_Z(z)=0$
@@ -219,8 +207,6 @@ f_Z(z)=\frac{dF_Z(z)}{dz}=
 \end{cases}
 $$
 
-<div STYLE="page-break-after: always;"></div>
-
 # 四、随机变量的数字特征
 ## 1. 数学期望
 离散型：$E(X)=\sum x_ip_i$
@@ -259,8 +245,6 @@ $Cov(X,Y)=E(XY)-E(X)E(Y)$
 5. $Cov(X,C)=0$
 6. $X,Y$ 独立 $\Rightarrow$ $Cov(X,Y)=0$
 
-<div STYLE="page-break-after: always;"></div>
-
 ## 4. 相关系数
 随机变量$X$的标准化：$X^*=\frac{X-E(X)}{\sqrt{D(X)}}$
 
@@ -269,8 +253,6 @@ $Cov(X,Y)=E(XY)-E(X)E(Y)$
 性质：
 1. $|\rho_{XY}|\leq 1$
 2. $|\rho_{XY}|=1 \Leftrightarrow$ $X,Y$ 成线性关系，$\exists a,b\ s.t.\ P(Y=aX+b)=1$, $a\rho_{XY}>0$
-
-<div STYLE="page-break-after: always;"></div>
 
 # 五、大数定律与中心极限定理
 ## 1. 大量独立同分布随机变量和的极限分布是正态分布（基础）
@@ -323,9 +305,6 @@ $\mathbb{X}=(X_1,X_2,\cdots,X_n)$独立同分布，记$X_i=\begin{cases}1&,A发�
 ## 6\*. 切比雪夫大数定律
 $\mathbb{X}=(X_1,X_2,\cdots,X_n)$不相关，$\exists E(X_i),D(X_i)<\infty$，则对任意$\epsilon>0$，有$\lim\limits_{n\rightarrow\infty}P\left(\left|\frac{\sum X_i}{n}-\frac{\sum E(X_i)}{n}\right|\leq \epsilon\right)=1$
 
-
-<div STYLE="page-break-after: always;"></div>
-
 # 六、抽样分布
 ## 1. 统计量
 1. 样本均值：$\overline{X}=\frac{1}{n}\sum X_i$
@@ -363,8 +342,6 @@ $\overline{X}=A_1$，$S^2=\frac{n-1}{n}B_2$，$B_1=0$
 4. 性质1：$F_{1-\alpha}(n_1,n_2)=\frac{1}{F_\alpha(n_2,n_1)}$
 5. 性质2：$P(F\leq F_\alpha(n_1,n_2))=1-\alpha$
 
-<div STYLE="page-break-after: always;"></div>
-
 ## 6.单正态总体下的抽样分布
 1. $\overline{X}$ ~ $N(\mu,\frac{\sigma^2}{n})$
 2. $U=\frac{\overline{X}-\mu}{\sigma}{\sqrt{n}}$ ~ $N(0,1)$
@@ -377,8 +354,6 @@ $\overline{X}=A_1$，$S^2=\frac{n-1}{n}B_2$，$B_1=0$
 3. $\frac{S_1^2/\sigma_1^2}{S_2^2/\sigma_2^2}$ ~ $F(n_1-1,n_2-1)$ $\Rightarrow$ $F=\frac{S_1^2/\sigma_1^2}{S_2^2/\sigma_2^2}$ ~ $F(n_1-1,n_2-1)$
 
 注：$S_w^2=\frac{(n_1-1)S_1^2+(n_2-1)S_2^2}{n_1+n_2-2}$
-
-<div STYLE="page-break-after: always;"></div>
 
 # 七、参数估计（点估计）
 ## 1. 矩估计
@@ -415,9 +390,6 @@ $L(\hat\sigma)=\prod f(x_i;\hat\sigma)=\prod\frac{1}{2\hat\sigma}e^{-\frac{|x_i|
 $\ln L(\hat\sigma)=-n\ln(2\hat\sigma)-\frac{\sum|x_i|}{\hat\sigma}$
 
 $\frac{d\ln L(\hat\sigma)}{d\hat\sigma}=-\frac{n}{\hat\sigma}+\frac{\sum|x_i|}{\hat\sigma^2}=0$，解得$\hat\sigma=\frac{\sum|x_i|}{n}$
-
-
-<div STYLE="page-break-after: always;"></div>
 
 # 八、假设检验
 ## 1. 基本步骤
