@@ -45,8 +45,8 @@ date: 2022-08-10 16:05:11
 - 0基础入坑算法竞赛
 - 现役ACM集训队队员
 - 现任校ACM_Club社长
-- CodeForces Rating 1600+
-- 云二次元 卡牌游戏爱好者
+- CodeForces Rating 1700+
+- 卡牌游戏爱好者
 
 ## Growth Timeline
 

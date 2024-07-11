@@ -26,11 +26,3 @@ var meting_api='https://api.injahow.cn/meting/?server=:server&type=:type&id=:id&
 <div id="aplayer" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="8693575338" data-server="tencent" data-type="playlist" data-mode="random" data-autoplay="false" data-listmaxheight="340px" data-preload="auto" data-theme="#e3f2f5" data-volume="0.4" mutex="true"></div>
 
 {% endfolding %}
-
-# 3号厅：W社の小曲
-
-{% folding 3号厅 %}
-
-<div id="aplayer" class="aplayer aplayer-tag-marker meting-tag-marker" data-id="8777719346" data-server="netease" data-type="playlist" data-mode="random" data-autoplay="false" data-listmaxheight="340px" data-preload="auto" data-theme="#e3f2f5" data-volume="0.4" mutex="true"></div>
-
-{% endfolding %}

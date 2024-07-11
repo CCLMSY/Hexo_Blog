@@ -14,11 +14,11 @@ tags:
 description: 拥有一个自己的QQ机器人难道不是一件很酷的事情吗//
 updated:
 cover:
-swiper_index: 10
+swiper_index: 
 ---
 
 # -1.望粥汁
-由于go-cqhttp已不再维护，插件于2024年2月下线noneBot商店，本教程第`5.2`步之后的方法已不再适用。
+由于go-cqhttp已不再维护，nonebot_plugin_gocqhttp插件已于2024年2月下线noneBot商店，本教程第`5.2`步之后的方法已不再适用。
 具体替代方案请参考：https://github.com/Mrs4s/go-cqhttp/issues/2471
 
 # 0.序言
