@@ -36,7 +36,7 @@ swiper_index:
 - 一个闲置的QQ账号
 
 ## 1.2.Python安装指南
-参考我的这篇文章：[Python安装指南](/posts/c34e2ac0.html)
+参考我的这篇文章：[Python安装指南](/posts/Tutor_Python_Install.html)
 
 10月2日发布了Python3.12.0版本，站长在10月5日安装机器人框架依赖时会报以下错误：
 ```
@@ -69,7 +69,7 @@ python -m pipx ensurepath
 ```
 如果出现以下提示，请调整你的账户环境变量：
 ![InstallNonebot2](https://source.cclmsy.cc/Images/Posts/BOT/BOT_14.png)
-调整账户的环境变量参考：[教程|Python安装指南](/posts/c34e2ac0.html)
+调整账户的环境变量参考：[教程|Python安装指南](/posts/Tutor_Python_Install.html)
 
 **安装完成后，关闭当前VSCode窗口，重启VSCode后才会生效。**
 ## 2.3.安装Nonebot脚手架
