@@ -28,13 +28,9 @@ swiper_index: 99
 
 _✨ 科大讯飞星火大模型官方API聊天机器人 ✨_
 
-<a href="./LICENSE">
-    <img src="https://img.shields.io/github/license/CCLMSY/nonebot-plugin-sparkapi.svg" alt="license">
-</a>
-<a href="https://pypi.python.org/pypi/nonebot-plugin-sparkapi">
-    <img src="https://img.shields.io/pypi/v/nonebot-plugin-sparkapi.svg" alt="pypi">
-</a>
-<img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="python">
+<img src="https://img.shields.io/github/license/CCLMSY/nonebot-plugin-sparkapi.svg" alt="license"></a>
+<a href="https://pypi.python.org/pypi/nonebot-plugin-sparkapi"><img src="https://img.shields.io/pypi/v/nonebot-plugin-sparkapi.svg" alt="pypi"></a>
+<img src="https://img.shields.io/badge/python-3.8+-blue.svg" alt="python"></a>
 
 </div>
 

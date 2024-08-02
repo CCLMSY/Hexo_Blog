@@ -6,7 +6,7 @@ categories: 学习笔记
 mathjax: true
 abbrlink: Note_Database_System
 date: 2024-01-16 4:55:00
-description: 《数据库原理》笔记
+description: 成为数据管理大师的必备技能
 ---
 # 一、概述（理解、记忆）
 ## 1.2. 基本知识

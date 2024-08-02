@@ -5,7 +5,7 @@ tags:
 categories: 学习笔记
 mathjax: true
 abbrlink: Note_Image_Processing
-description: 《数字图像处理》笔记
+description: 一门凭实力让数字图像更糊的学科（雾）
 date: 2024-06-17 02:55:00
 swiper_index:
 ---

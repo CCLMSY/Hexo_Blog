@@ -49,7 +49,7 @@ copy:
 #   icon: link || the description
 social:
   Wechat: /assets/Wechat.png || icon-weixin || faa-tada
-  QQ: https://res.abeim.cn/api-qq?qq=2502408581 || icon-QQ || faa-tada
+  # QQ: https://res.abeim.cn/api-qq?qq=2502408581 || icon-QQ || faa-tada
   B站: https://space.bilibili.com/1726583008 || icon-bilibili || faa-tada
   QQ邮箱: mailto:2502408581@qq.com || icon-youxiang || faa-tada
   Github: https://github.com/CCLMSY || icon-github || faa-tada
