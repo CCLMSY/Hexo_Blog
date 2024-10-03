@@ -2,8 +2,6 @@
 title: 关于
 date: 2022-08-10 16:05:11
 ---
-
-
 # 1.线路信息🚁
 - 主域名： www.cclmsy.cc 
   解析至Vercel，Vercel有全球的泛播节点，兼具全球CDN功能，国内访问速度较快 (Ping：70-80ms) 
@@ -45,7 +43,7 @@ date: 2022-08-10 16:05:11
 
 ## Algorithm Competition Resume
 - 0基础入坑算法竞赛 现役ACMer
-- Codeforces Rating 1700+
+- [Codeforces Rating 1900+](https://codeforces.com/profile/CC_Lmsy)
 - 2023.11 国际大学生程序设计竞赛(ICPC)区域赛（合肥） 铁牌
 - 2024.4 浙江省大学生程序设计竞赛(ZJCPC) 铜牌
 - 2024.5 国际大学生程序设计竞赛(ICPC)全国邀请赛（昆明） 铜牌
